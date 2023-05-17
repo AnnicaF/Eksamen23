@@ -7,7 +7,7 @@
         <div class="navbar-logo">DKV</div>
         <router-link to="/">Home</router-link>
         <router-link to="/job">Ledige stillinger</router-link>
-        <router-link to="/about">Kontakt</router-link>
+        <router-link to="/about">Om os</router-link>
       </div>
     </nav>
   </template>
@@ -37,7 +37,7 @@
   };
   </script>
   
-  <style>
+  <style scoped>
   .navbar {
     display: flex;
     justify-content: space-between;
@@ -77,6 +77,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-grow: 1;
   }
   
   .navbar-links a {

@@ -24,8 +24,8 @@ import Footer from '../components/Footer.vue'
     <h2>Hvem er vi?</h2>
       <p>DK Vikarservice er et dansk vikar- og rekrutteringsbureau, der tilbyder flere forskellige løsninger. Mandskabsleje og Try & Hire forløb. Vi har vikarer til faglærte brancher, samt alt ufaglært arbejde. Vi sørger for at matche den rigtige arbejdskraft til hver enkelt opgave vi modtager forespørgsler på. <br> <br>
 
-      Hos DK Vikarservice har vi dig i fokus hele vejen – lige meget om du er arbejdsgiver eller arbejdstager. Vores hovedfokus er at finde det rette match mellem virksomhed og vikar, så begge parter er glade for samarbejdet. Vi står klar til hjælpe med både vikarer og virksomheder, med vores viden, erfaring og indsigt.
-      Hos hos er du ikke bare et nummer i rækken – men vi går op i dig og dine behov. Vi er med hele vejen.  
+      Hos DK Vikarservice har vi dig i fokus hele vejen lige meget om du er arbejdsgiver eller arbejdstager. Vores hovedfokus er at finde det rette match mellem virksomhed og vikar, så begge parter er glade for samarbejdet. Vi står klar til hjælpe med både vikarer og virksomheder, med vores viden, erfaring og indsigt.
+      Hos hos er du ikke bare et nummer i rækken men vi går op i dig og dine behov. Vi er med hele vejen.  
       </p>
     <div class="buttons">
       <button class="button-style-1">Læs mere</button>
@@ -44,7 +44,7 @@ export default {
   name: 'Home',
 }
 </script>
-<style>
+<style scoped>
 .banner-container{
   position: relative;
   height: 800px;
@@ -148,9 +148,9 @@ p{
     height: 850px;
   }
   .box-container {
-    margin-top:50px;
     flex-direction: row;
     align-items: center;
+    margin-top: 50px;
   }
 
   .box {
@@ -179,6 +179,29 @@ p{
     padding: 10px;
     font-size: 14px;
     width: 130px;
+  }
+}
+@media screen and (max-width:600px){
+  .box-container {
+    flex-direction: column;
+    align-items: center;
+    margin-top:20px;
+  }
+
+  .banner-container {
+    height: 900px;
+  }
+  .box {
+    width: 190px;
+    height: 250px;
+    margin: 30px 0;
+  }
+
+  h2{
+    font-size: 25px;
+  }
+  p{
+    font-size: 18px;
   }
 }
 
