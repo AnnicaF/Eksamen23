@@ -1,6 +1,6 @@
 <template>
     <section>
-      <h2>Min sektion</h2>
+      <h3>Hvad står vi for?</h3>
       <div class="boxes">
         <div class="box1">
           <h5>Vission</h5>
@@ -21,7 +21,7 @@
   <style scoped>
   section {
     background: #FDF8F1;
-    height: 500px;
+    height: 550px;
   }
   .box1 { grid-area: a;}
   .box2 { grid-area: b;}
@@ -41,6 +41,9 @@
     border-radius: 10px;
     border: 3px solid #F3AE3D;
   }
+  h3{
+    padding: 35px;
+  }
   h5{
     font-size: 20px;
     text-align: center;
@@ -54,11 +57,9 @@
     'a b'
     'c c';
     align-items: center;
-    padding:40px;
   }
   section {
-    background: #FDF8F1;
-    height: 800px;
+    height: 880px;
   }
 }
 @media screen and (max-width: 600px) {
@@ -67,6 +68,21 @@
     'a'
     'b'
     'c';
+  }
+  .box1, .box2, .box3 {
+    width: 160px;
+    height: 200px;
+  }
+  h5{
+    font-size: 18px;
+    text-align: center;
+    margin: 2px;
+  }
+  p{
+    font-size:12px;
+  }
+  section {
+    height: 920px;
   }
 }
   </style>

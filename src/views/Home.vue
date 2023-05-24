@@ -1,11 +1,14 @@
 <script setup>
 import Navigation from '../components/Navigation.vue'
-import Footer from '../components/Footer.vue'
-
+import Footer     from '../components/Footer.vue'
+import SectionTwo from '../components/SectionTwo.vue';
+import IconBanner from '../components/IconBanner.vue';
+import Slider     from '../components/Slider.vue';
+import LogoSlider from '../components/LogoSlider.vue';
 </script>
 <template>
   <div class="banner-container">
-    <img class="banner-image" src="../assets/img/banner.jpg" alt="Stemningsbillede af DK Vikarservice">
+    <img class="banner-image" src="../assets/img/banner.jpg" alt="Stemningsbillede af DK Vikarservice"/>
     <Navigation/>
   <div class="box-container">
       <div class="box box-1">
@@ -32,7 +35,10 @@ import Footer from '../components/Footer.vue'
       <button class="button-style-2">Kontakt os</button>
     </div>
   </div>
-  <Logo/>
+  <Slider/>
+  <LogoSlider/>
+  <SectionTwo/>
+  <IconBanner/>
   <footer>
     <Footer/>
   </footer>
@@ -40,7 +46,7 @@ import Footer from '../components/Footer.vue'
 
 <script>
 export default {
-  components: { Navigation, Footer },
+  components: { Navigation, Footer, SectionTwo, IconBanner, Slider, LogoSlider},
   name: 'Home',
 }
 </script>
@@ -63,7 +69,6 @@ export default {
   display: flex;
   flex-direction: row;
   justify-content: center;
-
 }
 .box {
   display: flex;
@@ -142,7 +147,7 @@ p{
   border: none;
   font-size: 20px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 770px) {
   /* Banner */
   .banner-container {
     height: 850px;
@@ -160,21 +165,17 @@ p{
   }
 
   .about {
-    margin: 50px 10px;
+    margin: 50px 50px;
   }
-
   .about h2 {
     font-size: 25px;
   }
-
   .about p {
     font-size: 18px;
   }
-
   .buttons {
     margin: 40px 0;
   }
-
   .button-style-1, .button-style-2 {
     padding: 10px;
     font-size: 14px;
@@ -187,7 +188,6 @@ p{
     align-items: center;
     margin-top:20px;
   }
-
   .banner-container {
     height: 900px;
   }
@@ -196,7 +196,6 @@ p{
     height: 250px;
     margin: 30px 0;
   }
-
   h2{
     font-size: 25px;
   }
@@ -214,7 +213,6 @@ p{
     height: 220px;
     margin: 30px 0;
   }
-
   h2{
     font-size: 20px;
   }
@@ -224,15 +222,12 @@ p{
   .about {
     margin: 30px 30px;
   }
-
   .about h2 {
     font-size: 20px;
   }
-
   .about p {
     font-size: 16px;
   }
-
   .button-style-1, .button-style-2 {
     padding: 8px;
     font-size: 12px;
