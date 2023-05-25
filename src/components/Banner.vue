@@ -1,9 +1,22 @@
 <template>
     <div class="banner-container">
-      <h2 class="banner-heading">Hvem er DKV?</h2>
-      <img class="banner-image" src="../assets/img/teamwork.jpg" alt="Stemningsbillede af DK Vikarservice">
+      <h2 class="banner-heading"> {{ text }}</h2>
+      <img class="banner-image" :src="imageSrc" alt="Stemningsbillede af DK Vikarservice">
     </div>
   </template>
+
+  <script>
+  export default {
+  props: {
+    text: {
+      type: String,
+    },
+    imageSrc: {
+      type: String,
+    },
+  }
+}
+  </script>
   
   <style scoped>
   .banner-container {

@@ -5,7 +5,6 @@
         <p>
             {{ text }}
         </p>
-
 </template>
 
 <script>
@@ -30,7 +29,7 @@ p{
     padding-left:100px;
     padding-right: 100px;
     padding-bottom:100px;
+    line-height: 2;
 }
-
 </style>
 

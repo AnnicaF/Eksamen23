@@ -29,8 +29,9 @@
   .boxes {
     display: grid;
     grid-template-areas: 'a b c';
-    gap: 20px;
+    gap: 50px;
     justify-items: center;
+    justify-content: center;
   }
   .box1, .box2, .box3 {
     background-color: #fff;
@@ -51,7 +52,7 @@
   p{
     font-size:16px;
   }
-  @media screen and (max-width: 800px) {
+  @media screen and (max-width: 810px) {
   .boxes {
     grid-template-areas: 
     'a b'
