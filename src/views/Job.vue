@@ -1,5 +1,4 @@
 <script setup>
-import JobBox from '../components/JobBox.vue';
 </script>
 <template>
     <div class="filter-section">
@@ -21,7 +20,6 @@ import JobBox from '../components/JobBox.vue';
         </div>
       </div>
     </div>
-    <JobBox/>
   </template>
   
   <script>

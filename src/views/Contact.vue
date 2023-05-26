@@ -1,21 +1,18 @@
 <script setup>
+import Team from '../components/Team.vue'
 </script>
 
 <template>
   <Banner text="Kontakt" imageSrc="src/assets/img/teamwork.jpg" altText="Banner billede"/>
-<div class="contact-section">
-    <h2>Ring til os på: <span>+ 45 70 60 59 60</span></h2>
-    <h5> Mandag - torsdag kl: 08:00 - 16:00  <br> <br>
-    Fredag kl: 08:00 - 15:30 <br></h5>
-    <h5 class="speciel">Ønsker du at sende en mail til os, så kan du sende den til info@dkv.dk eller udfylde kontaktformularen nedenfor </h5>
-</div>
+    <div class="contact-section">
+        <h2>Ring til os på: <span>+ 45 70 60 59 60</span></h2>
+        <h5> Mandag - torsdag kl: 08:00 - 16:00  <br> <br>
+        Fredag kl: 08:00 - 15:30 <br></h5>
+        <h5 class="speciel">Ønsker du at sende en mail til os, så kan du sende den til info@dkv.dk eller udfylde kontaktformularen nedenfor </h5>
+    </div>
+ <Team/>
 </template>
-<style>
-.contact-section{
-    padding-top: 50px;
-    padding-left: 70px;
-}
-
+<style scoped>
 .contact-section h2{
     color: black;
     text-align: left;
@@ -29,5 +26,4 @@ h5 .speciel{
 h5{
     font-size: 16px;
 }
-
 </style>
