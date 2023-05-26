@@ -1,3 +1,6 @@
+<script setup>
+import JobBox from '../components/JobBox.vue';
+</script>
 <template>
     <div class="filter-section">
       <div v-for="button in buttons" :key="button" class="sort-button" ref="buttonRefs[button]">
@@ -18,6 +21,7 @@
         </div>
       </div>
     </div>
+    <JobBox/>
   </template>
   
   <script>

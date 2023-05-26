@@ -1,8 +1,4 @@
 <script setup>
-import Footer from '@/components/Footer.vue'
-import Banner from '@/components/Banner.vue'
-import TextSection from '@/components/TextSection.vue'
-import ContactSection from '@/components/ContactSection.vue'
 </script>
 
 <template>
@@ -13,13 +9,7 @@ import ContactSection from '@/components/ContactSection.vue'
     Fredag kl: 08:00 - 15:30 <br></h5>
     <h5 class="speciel">Ønsker du at sende en mail til os, så kan du sende den til info@dkv.dk eller udfylde kontaktformularen nedenfor </h5>
 </div>
-
 </template>
-
-<script>
-
-</script>
-
 <style>
 .contact-section{
     padding-top: 50px;

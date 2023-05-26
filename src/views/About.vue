@@ -1,9 +1,9 @@
 <script setup>
-import Footer from '@/components/Footer.vue'
-import Banner from '@/components/Banner.vue'
-import Section from '@/components/Section.vue'
-import TextSection from '@/components/TextSection.vue'
-import ContactSection from '@/components/ContactSection.vue'
+import Footer from '../components/Footer.vue'
+import Banner from '../components/Banner.vue'
+import Section from '../components/Section.vue'
+import TextSection from '../components/TextSection.vue'
+import ContactSection from '../components/ContactSection.vue'
 </script>
 
 <template>
