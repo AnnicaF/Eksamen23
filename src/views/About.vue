@@ -1,5 +1,4 @@
 <script setup>
-import Footer from '../components/Footer.vue'
 import Banner from '../components/Banner.vue'
 import Section from '../components/Section.vue'
 import TextSection from '../components/TextSection.vue'
@@ -12,12 +11,11 @@ import ContactSection from '../components/ContactSection.vue'
             Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua."></TextSection>
         <Section/>
         <ContactSection/>
-    <Footer />
 </template>
   
   <script>
   export default {
-  components: { TextSection, ContactSection, Footer, Banner, Section},
+  components: { TextSection, ContactSection, Banner, Section},
     name: 'About',
   }
   </script>

@@ -18,83 +18,85 @@
                 </div>
 
                 <div class="outer-box-2">
-                    <img clasa="top-img" src="src/assets/img/vikar/vikar-01.png" alt="">
+                    <img clasa="top-img" src="src/assets/img/vikar/vikar-02.png" alt="">
                     <div class="inner-box">
                         <div class="tekst-top">
-                            <h5>CEO</h5>
-                            <p>Abdallah A. Hachim</p>
+                            <h5>Salgschef</h5>
+                            <p>Peter Borum Nielsen</p>
                         </div>
                             <div class="red-streg"></div>
                             <div class="kontaktinfo">
-                            <p> +45 30 20 53 59</p>
-                            <p> ah@dkvikarservice.dk</p>
+                            <p> +45 30 20 61 36</p>
+                            <p> pb@dkvikarservice.dk</p>
                         </div>
                     </div>
                 </div>
 
                 <div class="outer-box-3">
-                    <img clasa="top-img" src="src/assets/img/vikar/vikar-01.png" alt="">
+                    <img clasa="top-img" src="src/assets/img/vikar/vikar-03.png" alt="">
                     <div class="inner-box">
                         <div class="tekst-top">
-                            <h5>CEO</h5>
-                            <p>Abdallah A. Hachim</p>
+                            <h5>Projektleder</h5>
+                            <p>Casper Lindgreen</p>
                         </div>
                             <div class="red-streg"></div>
                             <div class="kontaktinfo">
-                            <p> +45 30 20 53 59</p>
-                            <p> ah@dkvikarservice.dk</p>
+                            <p> +45 30 20 77 24</p>
+                            <p> cl@dkvikarservice.dk</p>
                         </div>
                     </div>
                 </div>
 
                 <div class="outer-box-4">
-                    <img clasa="top-img" src="src/assets/img/vikar/vikar-01.png" alt="">
+                    <img clasa="top-img" src="src/assets/img/vikar/vikar-03.png" alt="">
                     <div class="inner-box">
                         <div class="tekst-top">
-                            <h5>CEO</h5>
-                            <p>Abdallah A. Hachim</p>
+                            <h5>Erhverskonsulent</h5>
+                            <p>Ditte Marie Birkerod</p>
                         </div>
                             <div class="red-streg"></div>
                             <div class="kontaktinfo">
                             <p> +45 30 20 53 59</p>
-                            <p> ah@dkvikarservice.dk</p>
+                            <p> dm@dkvikarservice.dk</p>
                         </div>
                     </div>
                 </div>
 
                 <div class="outer-box-5">
-                    <img clasa="top-img" src="src/assets/img/vikar/vikar-01.png" alt="">
+                    <img clasa="top-img" src="src/assets/img/vikar/vikar-04.png" alt="">
                     <div class="inner-box">
                         <div class="tekst-top">
-                            <h5>CEO</h5>
-                            <p>Abdallah A. Hachim</p>
+                            <h5>Erhverskonsulent</h5>
+                            <p>Jonas Kulan</p>
                         </div>
                             <div class="red-streg"></div>
                             <div class="kontaktinfo">
                             <p> +45 30 20 53 59</p>
-                            <p> ah@dkvikarservice.dk</p>
+                            <p> jk@dkvikarservice.dk</p>
                         </div>
                     </div>
                 </div>
                 <div class="outer-box-6">
+                    <img clasa="top-img" src="src/assets/img/vikar/vikar-05.png" alt="">
                     <div class="inner-box">
                         <div class="tekst-top">
-                            <h5>CEO</h5>
-                            <p>Abdallah A. Hachim</p>
+                            <h5>Hr & Systemsansvarlig</h5>
+                            <p>Michael T. Karminski</p>
                         </div>
                             <div class="red-streg"></div>
                             <div class="kontaktinfo">
                             <p> +45 30 20 53 59</p>
-                            <p> ah@dkvikarservice.dk</p>
+                            <p> mk@dkvikarservice.dk</p>
                         </div>
                     </div>
                 </div>
 
                 <div class="outer-box-7">
+                    <img clasa="top-img" src="src/assets/img/vikar/vikar-06.png" alt="">
                     <div class="inner-box">
                         <div class="tekst-top">
-                            <h5>CEO</h5>
-                            <p>Abdallah A. Hachim</p>
+                            <h5>Marketingskooridantor</h5>
+                            <p>Stephanie H. Mundt</p>
                         </div>
                             <div class="red-streg"></div>
                             <div class="kontaktinfo">
@@ -105,57 +107,61 @@
                 </div>
 
                 <div class="outer-box-8">
+                    <img clasa="top-img" src="src/assets/img/vikar/vikar-07.png" alt="">
                     <div class="inner-box">
                         <div class="tekst-top">
-                            <h5>CEO</h5>
-                            <p>Abdallah A. Hachim</p>
+                            <h5>Senior rekrutteringskonsulent</h5>
+                            <p>Mehmet Gül</p>
                         </div>
                             <div class="red-streg"></div>
                             <div class="kontaktinfo">
                             <p> +45 30 20 53 59</p>
-                            <p> ah@dkvikarservice.dk</p>
+                            <p> mg@dkvikarservice.dk</p>
                         </div>
                     </div>
                 </div>
 
                 <div class="outer-box-9">
+                    <img clasa="top-img" src="src/assets/img/vikar/vikar-08.png" alt="">
                     <div class="inner-box">
                         <div class="tekst-top">
-                            <h5>CEO</h5>
-                            <p>Abdallah A. Hachim</p>
+                            <h5>Rekrutteringskonsulent</h5>
+                            <p>Irena Bakbach</p>
                         </div>
                             <div class="red-streg"></div>
                             <div class="kontaktinfo">
                             <p> +45 30 20 53 59</p>
-                            <p> ah@dkvikarservice.dk</p>
+                            <p> ib@dkvikarservice.dk</p>
                         </div>
                     </div>
                 </div>
 
                 <div class="outer-box-10">
+                    <img clasa="top-img" src="src/assets/img/vikar/vikar-09.png" alt="">
                     <div class="inner-box">
                         <div class="tekst-top">
-                            <h5>CEO</h5>
-                            <p>Abdallah A. Hachim</p>
+                            <h5>Rekrutteringskonsulent</h5>
+                            <p>Jenisten Amalathas</p>
                         </div>
                             <div class="red-streg"></div>
                             <div class="kontaktinfo">
                             <p> +45 30 20 53 59</p>
-                            <p> ah@dkvikarservice.dk</p>
+                            <p> ja@dkvikarservice.dk</p>
                         </div>
                     </div>
                 </div>
 
                 <div class="outer-box-11">
+                    <img clasa="top-img" src="src/assets/img/vikar/vikar-010.png" alt="">
                     <div class="inner-box">
                         <div class="tekst-top">
-                            <h5>CEO</h5>
-                            <p>Abdallah A. Hachim</p>
+                            <h5>Rekrutteringskonsulent</h5>
+                            <p>Thor Præstkær Jørgensen</p>
                         </div>
                             <div class="red-streg"></div>
                         <div class="kontaktinfo">
                             <p> +45 30 20 53 59</p>
-                            <p> ah@dkvikarservice.dk</p>
+                            <p> tpj@dkvikarservice.dk</p>
                         </div>
                     </div>
                 </div>
@@ -164,7 +170,6 @@
 </template>
 
 <style scoped>
-
 .outer-box-1 { grid-area: a;}
   .outer-box-2 { grid-area: b;}
   .outer-box-3 { grid-area: c;}
@@ -176,9 +181,12 @@
   .outer-box-9 { grid-area: i;}
   .outer-box-10 { grid-area: j;}
   .outer-box-11 { grid-area: k;}
+  
 h2 {
     margin-left: 15px;
-    margin-bottom: 100px;
+    margin-bottom: 150px;
+    padding-top: 50px;
+    font-size:35px;
 
 }
 .box-kontrol {
@@ -192,12 +200,12 @@ h2 {
 .contact-section {
     background-color:#FDF8F1;
     width: 100%;
-    height: 1000px;
+    padding-left:25px;
 }
 .outer-box-1, .outer-box-2, .outer-box-3, .outer-box-4, .outer-box-5, .outer-box-6, .outer-box-7, .outer-box-8, .outer-box-9, .outer-box-10, .outer-box-11{
     width: 200px;
     height: 230px;
-    background-color: red;
+    background-color: #8E4949;
     border-radius: 10px;
     position: relative;
     box-shadow: 5px 5px 5px grey;
@@ -223,15 +231,15 @@ h2 {
   .red-streg {
     width: 28%;
     height: 4px;
-    background-color: red;
+    background-color: #8E4949;
   }
 
   .tekst-top {
-    margin: 15px;
+    margin: 10px;
   }
 
   .kontaktinfo {
-    color: lightcoral;
+    color: #8E4949;
     margin-bottom: 15px;
     margin-left: 15px;
   }
