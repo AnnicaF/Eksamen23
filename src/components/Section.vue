@@ -43,7 +43,10 @@
     border: 3px solid #F3AE3D;
   }
   h3{
+    font-size: 25px;
     padding: 35px;
+    text-align: center;
+    margin:0;
   }
   h5{
     font-size: 20px;

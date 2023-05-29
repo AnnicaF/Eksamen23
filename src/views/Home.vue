@@ -1,5 +1,5 @@
 <script setup>
-import Navigation from '../components/Navigation.vue'
+import Nav from '../components/Nav.vue'
 import Footer     from '../components/Footer.vue'
 import SectionTwo from '../components/SectionTwo.vue';
 import IconBanner from '../components/IconBanner.vue';
@@ -9,7 +9,7 @@ import LogoSlider from '../components/LogoSlider.vue';
 <template>
   <div class="banner-container">
     <img class="banner-image" src="../assets/img/banner.jpg" alt="Stemningsbillede af DK Vikarservice"/>
-    <Navigation/>
+    <Nav/>
   <div class="box-container">
       <div class="box box-1">
         <h2>Mangler du en medarbejder?</h2>
@@ -46,11 +46,16 @@ import LogoSlider from '../components/LogoSlider.vue';
 
 <script>
 export default {
-  components: { Navigation, Footer, SectionTwo, IconBanner, Slider, LogoSlider},
+  components: { Nav, Footer, SectionTwo, IconBanner, Slider, LogoSlider},
   name: 'Home',
 }
 </script>
 <style scoped>
+  *{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+  }
 .banner-container{
   position: relative;
   height: 800px;
@@ -69,6 +74,7 @@ export default {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  padding-top: 100px;
 }
 .box {
   display: flex;
@@ -95,10 +101,11 @@ export default {
 }
 h2{
 font-size: 30px;
+padding-bottom: 20px;
 }
 p{
   font-size: 20px;
-  padding-bottom: 15px;
+  padding-bottom: 20px;
 }
 .button-2{
   border: 3px solid #F3AE3D;
@@ -155,7 +162,6 @@ p{
   .box-container {
     flex-direction: row;
     align-items: center;
-    margin-top: 50px;
   }
 
   .box {

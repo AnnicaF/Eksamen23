@@ -112,6 +112,11 @@ data() {
   </script>
   
   <style scoped>
+    *{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+  }
   .filter-section {
     display: flex;
     justify-content: center;

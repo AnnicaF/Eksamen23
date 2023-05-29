@@ -22,6 +22,8 @@ export default {
 
 <style scoped>
 h2{
+  font-size: 25px;
+  text-align: center;
     padding-top:35px;
     padding-bottom:35px;
 }

@@ -1,7 +1,7 @@
 <template>
     <div class="image-section">
         <div class="overlay"></div>
-      <img src="../assets/img/teamwork.jpg" alt="Billede" class="responsive-image" />
+        <img class="responsive-image" :src="imageSrc" alt="Stemningsbillede af DK Vikarservice">
       <div class="content">
         <h2>Kontakt os med dine spørgsmål</h2>
         <p>Vi sidder altid klar ved telefonerne</p>
@@ -9,11 +9,12 @@
       </div>
     </div>
   </template>
+
   
   <script>
   export default {
     props: {
-      imageUrl: {
+      imageSrc: {
         type: String,
       },
     }
@@ -71,6 +72,4 @@
     border: none;
     cursor: pointer;
   }
-
-  
   </style>

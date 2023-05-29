@@ -222,7 +222,7 @@ h2 {
     margin-left: 2px;
   }
   img{
-    z-index: 999;
+    z-index: 99;
     height: 150px;
     position: relative;
     top:-45.5%;

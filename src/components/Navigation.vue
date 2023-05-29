@@ -4,7 +4,9 @@
         <i class="fa-solid fa-bars"></i>
       </div>
       <div class="navbar-links" :class="{ 'active': menuActive }">
-        <div class="navbar-logo">DKV</div>
+        <div class="navbar-logo">
+          <img src="src/assets/img/logo/logo.png" alt="Logo af DKV">
+        </div>
         <router-link to="/">Home</router-link>
         <router-link to="/job">Ledige stillinger</router-link>
         <router-link to="/about">Om os</router-link>
@@ -51,6 +53,9 @@
     z-index: 10;
     background-color: transparent;
   }
+  img{
+    width:200px;
+  }
   
   .navbar-scroll {
     background-color: #303030;
@@ -72,24 +77,20 @@
     display: none;
     cursor: pointer;
   }
-  
   .navbar-links {
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-grow: 1;
   }
-  
   .navbar-links a {
     color: black;
     text-decoration: none;
     padding: 0 10px;
   }
-  
   .navbar-links a:hover {
     text-decoration: none;
   }
-  
   @media screen and (max-width: 768px) {
     .navbar-links {
       display: none;

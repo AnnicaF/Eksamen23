@@ -2,7 +2,7 @@
     <footer>
       <div class="footer-container">
         <div class="footer-item">
-            <img src="" alt="">
+            <img src="src/assets/img/logo/logo.png" alt="Logo af DKV">
             <h5>OM DK VIKARSERVICE</h5>
             <p class="info">DK Vikarservice er et dansk 
                 vikar- og rekrutteringsbureau, der 
@@ -40,9 +40,6 @@
   </template>
   
   <script>
-  export default {
-    name: 'Footer',
-  };
   </script>
   
 <style scoped>
@@ -76,6 +73,9 @@
     color: #FFFFFF;
     display: flex;
     flex-direction: column;
+    }
+    img{
+        width:200px;
     }
 
     p.info {

@@ -2,7 +2,7 @@
   <section>
       <h4>Det tilbyder vi til virksomheder</h4> 
         <div class="overlay">
-          <img src="../assets/img/teamwork.jpg"    alt="Billede" class="background-img" />
+          <img src="../assets/img/img-01.jpg"    alt="Billede" class="background-img" />
           <div class="boxes"> 
             <div class="box1">
               <img  class="icon" src="src/assets/img/icons/people-01.png" alt="Ikon til rekrutering">

@@ -50,14 +50,19 @@
   </script>
   
   <style scoped>
+    *{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+  }
   .image-section {
     position: relative;
     width: 100%;
     height: 550px;
   }
-
   h2{
     color: #fff;
+    padding-bottom: 25px;
   }
   .responsive-image {
     width: 100%;

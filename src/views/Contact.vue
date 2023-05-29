@@ -1,12 +1,14 @@
 <script setup>
+import Nav from '../components/Nav.vue'
 import Team from '../components/Team.vue'
 import Banner from '../components/Banner.vue'
-import Footer from '../components/Footer.vue'
+import Cities from '../components/Cities.vue'
 import ContactForm from '../components/ContactForm.vue'
 </script>
 
 <template>
-  <Banner text="Kontakt" imageSrc="src/assets/img/teamwork.jpg" altText="Banner billede"/>
+    <Nav/>
+  <Banner text="Kontakt" imageSrc="src/assets/img/img-03.jpg" altText="Banner billede"/>
     <div class="section">
         <h2>Ring til os på: <span>+ 45 70 60 59 60</span></h2>
         <h5> Mandag - torsdag kl: 08:00 - 16:00  <br> <br>
@@ -16,9 +18,8 @@ import ContactForm from '../components/ContactForm.vue'
     </div>
  <Team/>
  <ContactForm/>
- <footer>
+ <Cities/>
     <Footer/>
- </footer>
 </template>
 
 <style scoped>
