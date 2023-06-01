@@ -5,10 +5,11 @@
                 <img src="src/assets/img/logo/logo.png" alt="">
             </div>
             <ul v-show="!mobile" class="navigation">
-                <li><router-link class="link" :to="{ name:'' }">Arbejdsgivere</router-link></li>
                 <li><router-link class="link" :to="{ name:'' }">Jobsøgende</router-link></li>
+                <li><router-link class="link" :to="{ name:'' }">Info til vikarer</router-link></li>
+                <li><router-link class="link" :to="{ name:'' }">At arbejde ved os</router-link></li>
                 <li><router-link class="link" :to="{ name:'' }">Ledige job</router-link></li>
-                <li><router-link class="link" :to="{ name:'' }">Om os</router-link></li>
+                <li><router-link class="link" :to="{ name:'' }">Om os </router-link></li>
                 <li><router-link class="link" :to="{ name:'' }">Kontakt</router-link></li>
                 <div class="login-btn">
             <router-link class="login-link" :to="{ name: '' }">Login</router-link>
@@ -19,8 +20,9 @@
             </div>
             <transition name="mobile-nav">
                 <ul v-show="mobileNav" class="dropdown-nav">
-                <li><router-link class="link" :to="{ name:'' }">Arbejdsgivere</router-link></li>
-                <li><router-link class="link" :to="{ name:'' }">Ledige job</router-link></li>
+                <li><router-link class="link" :to="{ name:'' }">Jobsøgende</router-link></li>
+                <li><router-link class="link" :to="{ name:'' }">Info til vikarer</router-link></li>
+                <li><router-link class="link" :to="{ name:'' }">At arbejde ved os</router-link></li>
                 <li><router-link class="link" :to="{ name:'' }">Om os</router-link></li>
                 <li><router-link class="link" :to="{ name:'' }">Kontakt</router-link></li>
                 <div class="login-btn">
@@ -76,6 +78,7 @@ export default {
             this.mobilNav = false;
             return;
             }
-    }
+        }
+
 };
 </script>

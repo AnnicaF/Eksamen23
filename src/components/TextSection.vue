@@ -20,18 +20,4 @@ export default {
 }
 </script>
 
-<style scoped>
-h2{
-  font-size: 25px;
-  text-align: center;
-    padding-top:35px;
-    padding-bottom:35px;
-}
-p{
-    padding-left:100px;
-    padding-right: 100px;
-    padding-bottom:100px;
-    line-height: 2;
-}
-</style>
 

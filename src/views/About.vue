@@ -8,23 +8,16 @@ import ContactSection from '../components/ContactSection.vue'
 
 <template>
   <Nav/>
-  <Banner text="Hvem er vi?" imageSrc="src/assets/img/img-02.jpg" altText="Banner billede" />
-  <TextSection heading="Stor passion og partnerskab" text="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt.
-          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua."></TextSection>
+  <Banner text="Hvem er DKV?" imageSrc="src/assets/img/img-02.jpg" altText="Banner billede" />
+  <div class="about">
+    <h2 class="gul">Stor passion og partnerskab</h2>
+      <p class="italic">DKV er en virksomhed, der tilbyder vikartjenester til forskellige industrier og virksomheder. Vi formidler midlertidigt ansatte arbejdskraft til virksomheder, der har behov for ekstra personale i en begrænset periode. DKV kan hjælpe med at finde vikarer til forskellige typer job, herunder administrative stillinger, produktionsarbejde, lagerarbejde, kundeservice og meget mere.</p>
+
+      <p class="italic">Vi sikrer, at vores vikarer er kvalificerede og i stand til at udføre de opgaver, der kræves af dem. Vi sørger for at matche de rette vikarer med virksomhedernes specifikke behov og krav. DKV kan derfor være en nyttig ressource for virksomheder, der har brug for ekstra arbejdskraft i travle perioder eller ved midlertidige projekter. Hvis du vil i kontakt med os, så tøv ikke med at kontakte os. Du kan finde alle vores kontakter her, og dertil se hvem vi er.</p> 
+    </div>
   <Section/>
   <ContactSection imageSrc="src/assets/img/img-03.jpg" altText="Banner billede" />
   <Footer/>
 </template>
-<script>
-</script>
-  
-  <style scoped>  
-    *{
-    margin:0;
-    padding:0;
-    box-sizing: border-box;
-  }
-  
-  </style>
-  
+
 

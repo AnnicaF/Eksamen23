@@ -1,6 +1,12 @@
 <script setup>
+import Nav        from '../components/Nav.vue'
+import Footer     from '../components/Footer.vue'
+import Banner     from '../components/Banner.vue'
+import Jobs     from '../components/Jobs.vue'
 </script>
 <template>
+  <Nav/>
+  <Banner text="Find dit nye job her" imageSrc="src/assets/img/img-03.jpg" altText="Banner billede"/>
     <div class="filter-section">
       <div v-for="button in buttons" :key="button" class="sort-button" ref="buttonRefs[button]">
         <button @click="toggleDropdown(button)" :class="{ open: isDropdownOpen[button] }">
@@ -20,6 +26,9 @@
         </div>
       </div>
     </div>
+    <Jobs/>
+
+    <Footer/>
   </template>
   
   <script>
@@ -102,7 +111,6 @@ data() {
     document.removeEventListener('click', this.closeDropdownOnClickOutside);
   }
 }
-
     },
 
     beforeUnmounted() {
