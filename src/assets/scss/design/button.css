@@ -1,0 +1,25 @@
+.btn, .btn-secondary2, .btn-secondary, .btn-primary {
+  padding: 10px 40px;
+  font-size: 20px;
+  background-color: #F3AE3D;
+  color: #FFFFFF;
+  border: 2px;
+}
+
+.btn-primary {
+  background-color: #8E4949;
+}
+
+.btn-secondary {
+  background-color: transparent;
+  color: #F3AE3D;
+  border: 2px solid #F3AE3D;
+  margin-top: 20px;
+}
+
+.btn-secondary2 {
+  background-color: transparent;
+  color: #FFFFFF;
+  border: 2px solid #FFFFFF;
+  margin-top: 20px;
+}/*# sourceMappingURL=button.css.map */

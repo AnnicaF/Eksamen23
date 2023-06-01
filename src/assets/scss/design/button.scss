@@ -1,0 +1,37 @@
+@import 'colors';
+
+
+// Buttons
+
+// Standard knap
+.btn {
+    padding: 10px 40px;
+    font-size: 20px;
+    background-color: $button-color-gul;
+    color: $text-color-hvid;
+    border:2px;
+  }  
+  // Primær knap
+  .btn-primary {
+    @extend .btn;
+    background-color: $button-color-rød;
+  }
+  
+  // Sekundær knap
+  .btn-secondary {
+    @extend .btn;
+    background-color: $button-color-trans;
+    color: $text-color-gul;
+    border: 2px solid $text-color-gul; 
+    margin-top: 20px;
+  }
+
+  .btn-secondary2 {
+    @extend .btn;
+    background-color: $button-color-trans;
+    color: $text-color-hvid;
+    border: 2px solid $text-color-hvid;
+    margin-top: 20px;
+  }
+
+  // ekstra sekundær knap 

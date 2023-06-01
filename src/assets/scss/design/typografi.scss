@@ -1,0 +1,99 @@
+@import 'colors'; 
+
+// Variabler
+$base-font-family: 'Roboto', sans-serif;
+$base-font-size: 16px;
+
+// Overskrifter
+h1 {
+  font-size: 60px;
+  font-weight: bold;
+  text-align: center;
+  color:$text-color-hvid;
+  padding-top: 200px;
+
+  @media (max-width: 800px) {
+    font-size: 40px;
+  }
+}
+
+h2.gul{
+  font-size: 36px;
+  font-weight: bold;
+  text-align: center;
+  color: $text-color-gul;
+  margin-bottom: 30px;
+  padding-top: 50px;
+}
+
+h2 {
+    font-size: 36px;
+    font-weight: bold;
+    color: $text-color-sort;
+    text-align: center;
+    padding-bottom: 30px;
+  }
+  h2.hvid {
+    font-size: 36px;
+    font-weight: bold;
+    color: $text-color-hvid;
+    text-align: center;
+  }
+
+h3 {
+  font-size: 24px;
+  font-weight: bold;
+  color: $text-color-hvid;
+  padding-bottom: 20px;
+}
+h3.sort {
+  font-size: 24px;
+  font-weight: bold;
+  color: $text-color-sort;
+  text-align: center;
+}
+
+h4{
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+h5{
+    font-size: 17px;
+    margin-top: 20px;
+}
+h5.italic{
+  font-style: italic;
+  
+}
+
+// Brødtekst
+p {
+  font-size: 16px;
+  line-height: 1.8;
+  color: $text-color-sort;
+}
+p.small {
+  font-size: 14px;
+  line-height: 1.8;
+  padding-top: 12px;
+  color: $text-color-sort;
+}
+p.hvid {
+    font-size: 16px;
+    line-height: 1.8;
+    color: $text-color-hvid;
+  }
+
+  p.italic {
+    font-size: 16px;
+    line-height: 1.8;
+    color: $text-color-sort;
+    font-style: italic;
+  }
+
+  p.italic-hvid {
+    color: $text-color-hvid;
+    font-style: italic;
+    padding-bottom: 40px;
+  }

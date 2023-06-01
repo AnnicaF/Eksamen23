@@ -1,0 +1,97 @@
+h1 {
+  font-size: 60px;
+  font-weight: bold;
+  text-align: center;
+  color: #FFFFFF;
+  padding-top: 200px;
+}
+@media (max-width: 800px) {
+  h1 {
+    font-size: 40px;
+  }
+}
+
+h2.gul {
+  font-size: 36px;
+  font-weight: bold;
+  text-align: center;
+  color: #F3AE3D;
+  margin-bottom: 30px;
+  padding-top: 50px;
+}
+
+h2 {
+  font-size: 36px;
+  font-weight: bold;
+  color: #000000;
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+h2.hvid {
+  font-size: 36px;
+  font-weight: bold;
+  color: #FFFFFF;
+  text-align: center;
+}
+
+h3 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #FFFFFF;
+  padding-bottom: 20px;
+}
+
+h3.sort {
+  font-size: 24px;
+  font-weight: bold;
+  color: #000000;
+  text-align: center;
+}
+
+h4 {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+
+h5 {
+  font-size: 17px;
+  margin-top: 20px;
+}
+
+h5.italic {
+  font-style: italic;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.8;
+  color: #000000;
+}
+
+p.small {
+  font-size: 14px;
+  line-height: 1.8;
+  padding-top: 12px;
+  color: #000000;
+}
+
+p.hvid {
+  font-size: 16px;
+  line-height: 1.8;
+  color: #FFFFFF;
+}
+
+p.italic {
+  font-size: 16px;
+  line-height: 1.8;
+  color: #000000;
+  font-style: italic;
+}
+
+p.italic-hvid {
+  color: #FFFFFF;
+  font-style: italic;
+  padding-bottom: 40px;
+}/*# sourceMappingURL=typografi.css.map */
