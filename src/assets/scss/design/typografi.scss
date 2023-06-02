@@ -1,7 +1,6 @@
 @import 'colors'; 
 
 // Variabler
-$base-font-family: 'Roboto', sans-serif;
 $base-font-size: 16px;
 
 // Overskrifter
@@ -11,6 +10,7 @@ h1 {
   text-align: center;
   color:$text-color-hvid;
   padding-top: 200px;
+  font-family: 'roboto', sans-serif;
 
   @media (max-width: 800px) {
     font-size: 40px;
@@ -24,6 +24,7 @@ h2.gul{
   color: $text-color-gul;
   margin-bottom: 30px;
   padding-top: 50px;
+  font-family: 'roboto', sans-serif;
 }
 
 h2 {
@@ -38,13 +39,25 @@ h2 {
     font-weight: bold;
     color: $text-color-hvid;
     text-align: center;
+    font-family: 'roboto', sans-serif;
+
+    @media (max-width: 600px) {
+      font-size: 25px;
+    }
   }
 
 h3 {
   font-size: 24px;
   font-weight: bold;
-  color: $text-color-hvid;
+  color: $text-color-sort;
   padding-bottom: 20px;
+}
+
+h3.red {
+  font-size: 24px;
+  font-weight: bold;
+  color: $text-color-red;
+  text-align: center;
 }
 h3.sort {
   font-size: 24px;
@@ -62,9 +75,14 @@ h5{
     font-size: 17px;
     margin-top: 20px;
 }
+h5.footer{
+  font-size: 17px;
+  margin-top: 20px;
+  padding-bottom: 20px;
+  text-align: start;
+}
 h5.italic{
   font-style: italic;
-  
 }
 
 // Brødtekst
@@ -72,6 +90,7 @@ p {
   font-size: 16px;
   line-height: 1.8;
   color: $text-color-sort;
+  padding-top:10px;
 }
 p.small {
   font-size: 14px;
@@ -83,6 +102,7 @@ p.hvid {
     font-size: 16px;
     line-height: 1.8;
     color: $text-color-hvid;
+    padding-top:10px;
   }
 
   p.italic {

@@ -1,10 +1,12 @@
 @charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 h1 {
   font-size: 60px;
   font-weight: bold;
   text-align: center;
   color: #FFFFFF;
   padding-top: 200px;
+  font-family: "roboto", sans-serif;
 }
 @media (max-width: 800px) {
   h1 {
@@ -19,6 +21,7 @@ h2.gul {
   color: #F3AE3D;
   margin-bottom: 30px;
   padding-top: 50px;
+  font-family: "roboto", sans-serif;
 }
 
 h2 {
@@ -34,13 +37,26 @@ h2.hvid {
   font-weight: bold;
   color: #FFFFFF;
   text-align: center;
+  font-family: "roboto", sans-serif;
+}
+@media (max-width: 600px) {
+  h2.hvid {
+    font-size: 25px;
+  }
 }
 
 h3 {
   font-size: 24px;
   font-weight: bold;
-  color: #FFFFFF;
+  color: #000000;
   padding-bottom: 20px;
+}
+
+h3.red {
+  font-size: 24px;
+  font-weight: bold;
+  color: #8E4949;
+  text-align: center;
 }
 
 h3.sort {
@@ -61,6 +77,13 @@ h5 {
   margin-top: 20px;
 }
 
+h5.footer {
+  font-size: 17px;
+  margin-top: 20px;
+  padding-bottom: 20px;
+  text-align: start;
+}
+
 h5.italic {
   font-style: italic;
 }
@@ -69,6 +92,7 @@ p {
   font-size: 16px;
   line-height: 1.8;
   color: #000000;
+  padding-top: 10px;
 }
 
 p.small {
@@ -82,6 +106,7 @@ p.hvid {
   font-size: 16px;
   line-height: 1.8;
   color: #FFFFFF;
+  padding-top: 10px;
 }
 
 p.italic {
@@ -123,10 +148,18 @@ p.italic-hvid {
   margin-top: 20px;
 }
 
+.btn-small {
+  padding: 10px 40px;
+  background-color: #F3AE3D;
+  color: #FFFFFF;
+  border: 2px;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
 }
 
 /* Banner component start */
@@ -343,6 +376,12 @@ p.italic-hvid {
   padding-top: 100px;
   color: #FFFFFF;
 }
+@media screen and (max-width: 600px) {
+  .image-section-2 .content {
+    padding-left: 50px;
+    padding-top: 70px;
+  }
+}
 
 /* Contact section  component slut */
 /* Icon banner component start */
@@ -410,7 +449,12 @@ p.italic-hvid {
   justify-content: center;
   align-items: center;
   gap: 10px;
-  padding: 20px;
+  padding: 30px;
+}
+.filter-bar select {
+  height: 40px;
+  width: 130px;
+  padding: 10px;
 }
 .filter-bar .filter-bar select,
 .filter-bar .filter-bar button {
@@ -425,6 +469,7 @@ p.italic-hvid {
   align-items: center;
   gap: 20px;
   padding: 20px;
+  margin-bottom: 100px;
 }
 .box-container .box {
   border: 1px solid #000;
@@ -433,14 +478,13 @@ p.italic-hvid {
 }
 .box-container .box .box-title {
   font-size: 18px;
-  margin-bottom: 20px;
+  text-align: start;
 }
 .box-container .box .box-text {
   margin-bottom: 35px;
 }
 .box-container .box .box-buttons {
   display: flex;
-  justify-content: center;
   gap: 10px;
 }
 .box-container .box .box-buttons .button1 {
@@ -486,7 +530,7 @@ p.italic-hvid {
   }
 }
 .slider {
-  height: 100px;
+  height: 70px;
   margin-top: 50px;
   margin-bottom: 50px;
   overflow: hidden;
@@ -510,7 +554,7 @@ p.italic-hvid {
 .slider .slider-track .slide img {
   filter: grayscale(100%);
   transition: filter 0.3s ease;
-  height: 100px;
+  height: 70px;
   width: 100%;
   -o-object-fit: contain;
      object-fit: contain;
@@ -695,6 +739,7 @@ li::marker {
 section {
   background: #FDF8F1;
   height: 750px;
+  padding-top: 50px;
 }
 section .boxes {
   display: grid;
@@ -715,13 +760,14 @@ section .boxes .box1, section .boxes .box2, section .boxes .box3 {
 section .boxes .box1 p.small1, section .boxes .box2 p.small1, section .boxes .box3 p.small1 {
   padding-top: 20px;
 }
+
 @media screen and (max-width: 1038px) {
   section .boxes {
     grid-template-areas: "a b" "c c";
     align-items: center;
   }
-  section section {
-    height: 1200px;
+  section {
+    height: 1300px;
   }
 }
 @media screen and (max-width: 600px) {
@@ -732,11 +778,63 @@ section .boxes .box1 p.small1, section .boxes .box2 p.small1, section .boxes .bo
     width: 160px;
     height: 200px;
   }
-  section section {
+  section {
     height: 920px;
   }
 }
+.box1 {
+  grid-area: a;
+}
 
+.box2 {
+  grid-area: b;
+}
+
+.box3 {
+  grid-area: c;
+}
+
+.boxes {
+  display: grid;
+  grid-template-areas: "a b c";
+  gap: 50px;
+  justify-items: center;
+  justify-content: center;
+}
+.boxes .box1, .boxes .box2, .boxes .box3 {
+  background-color: #fff;
+  padding: 15px;
+  width: 280px;
+  height: 500px;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  border: 3px solid #F3AE3D;
+}
+.boxes .box1 p.small1, .boxes .box2 p.small1, .boxes .box3 p.small1 {
+  padding-top: 20px;
+}
+
+@media screen and (max-width: 1038px) {
+  .boxes {
+    grid-template-areas: "a b" "c c";
+    align-items: center;
+  }
+  section {
+    height: 1200px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .boxes {
+    grid-template-areas: "a" "b" "c";
+  }
+  .box1, .box2, .box3 {
+    width: 160px;
+    height: 200px;
+  }
+  section {
+    height: 1800px;
+  }
+}
 .box1 {
   grid-area: a;
 }
@@ -751,13 +849,14 @@ section .boxes .box1 p.small1, section .boxes .box2 p.small1, section .boxes .bo
 
 /* Section component slut*/
 /* Section-Two component start*/
-section-two {
+.section-2 {
   position: relative;
   width: 100%;
+  padding-top: 40px;
   height: 600px;
   background-color: rgba(62, 62, 62, 0.7);
 }
-section-two .background-img {
+.section-2 .background-image {
   top: 0;
   left: 0;
   width: 100%;
@@ -767,7 +866,7 @@ section-two .background-img {
   z-index: -1;
   position: absolute;
 }
-section-two .boxes {
+.section-2 .boxes {
   display: grid;
   grid-template-areas: "a b c";
   gap: 20px;
@@ -780,57 +879,63 @@ section-two .boxes {
   left: 0;
   right: 0;
 }
-section-two .boxes .box2 {
+.section-2 .boxes .box2 {
   background-color: #8E4949;
   color: white;
   padding: 20px;
-  width: 200px;
+  width: 250px;
   height: 400px;
+  border: none;
   box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
   border-radius: 10px;
 }
-section-two .boxes .box1, section-two .boxes .box3 {
+.section-2 .boxes .box2 .icon {
+  height: 80px;
+  display: block;
+  margin: 0 auto;
+}
+.section-2 .boxes .box1, .section-2 .boxes .box3 {
   background-color: #fff;
   padding: 20px;
-  width: 200px;
+  width: 250px;
   height: 360px;
   box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
   border-radius: 10px;
   border: 3px solid #F3AE3D;
 }
-section-two .boxes .box1 .icon, section-two .boxes .box3 .icon {
+.section-2 .boxes .box1 .icon, .section-2 .boxes .box3 .icon {
   height: 80px;
   display: block;
   margin: 0 auto;
 }
 @media screen and (max-width: 800px) {
-  section-two .boxes {
+  .section-2 .boxes {
     grid-template-areas: "b b" "a c";
     align-items: center;
   }
-  section-two .box2 {
+  .section-2 .box2 {
     width: 250px;
   }
-  section-two .background-img {
+  .section-2 .background-img {
     height: 1020px;
     padding-bottom: 20px;
   }
-  section-two section-two {
+  .section-2 .section-2 {
     height: 1000px;
   }
 }
 @media screen and (max-width: 600px) {
-  section-two .boxes {
+  .section-2 .boxes {
     grid-template-areas: "a" "b" "c";
   }
-  section-two .overlay {
+  .section-2 .overlay {
     height: 870px;
   }
-  section-two .box1, section-two .box2, section-two .box3 {
+  .section-2 .box1, .section-2 .box2, .section-2 .box3 {
     width: 180px;
     height: 220px;
   }
-  section-two section-two {
+  .section-2 .section-2 {
     height: 920px;
   }
 }
@@ -1053,69 +1158,70 @@ section-two .boxes .box1 .icon, section-two .boxes .box3 .icon {
 
 /* Team component  slut*/
 /* VikarSection component  start*/
-section-vikar {
+.image-section-3 {
   position: relative;
   width: 100%;
-  height: 600px;
-  background-color: rgba(62, 62, 62, 0.7);
+  height: 400px;
 }
-section-vikar .vikar-box {
-  display: grid;
-  grid-template-areas: "a b";
-  gap: 50px;
-  justify-items: center;
-  justify-content: center;
-  align-items: center;
+
+.image-section-3 .overlay {
   position: absolute;
-  top: 10%;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.image-section-3 .responsive-image {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.image-section-3 .content {
+  position: absolute;
   bottom: 0;
   left: 0;
-  right: 0;
+  padding-left: 100px;
+  padding-top: 100px;
+  color: #FFFFFF;
+  z-index: 1;
 }
-section-vikar .vikar-box .box-1, section-vikar .vikar-box .box-2 {
+
+.image-section-3 .vikar-box {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 50px;
+  justify-items: center;
+  align-items: center;
+}
+
+.image-section-3 .box-1,
+.image-section-3 .box-2 {
   padding: 20px;
   width: 200px;
   height: 360px;
   color: #fff;
   text-align: center;
 }
-@media screen and (max-width: 800px) {
-  section-vikar .vikar-box {
-    grid-template-areas: "a b";
-    align-items: center;
-  }
-  section-vikar .background-img {
-    height: 1020px;
-    padding-bottom: 20px;
-  }
-  section-vikar section-vikar {
-    height: 1000px;
-  }
-}
+
 @media screen and (max-width: 600px) {
-  section-vikar .vikar-box {
-    grid-template-areas: "a" "b";
+  .image-section-3 .content {
+    padding-left: 50px;
+    padding-top: 70px;
   }
-  section-vikar .overlay {
-    height: 870px;
+  .image-section-3 .vikar-box {
+    grid-template-columns: 1fr;
+    gap: 20px;
   }
-  section-vikar .box-1, section-vikar .box-2s {
-    width: 180px;
-    height: 220px;
-  }
-  section-vikar section-vikar {
-    height: 920px;
+  .image-section-3 .box-1,
+  .image-section-3 .box-2 {
+    width: 100%;
+    height: auto;
   }
 }
-
-.box-1 {
-  grid-area: a;
-}
-
-.box-2 {
-  grid-area: b;
-}
-
 /* VikarSection component  slut*/
 /* About view start */
 .about {
@@ -1125,6 +1231,18 @@ section-vikar .vikar-box .box-1, section-vikar .vikar-box .box-2 {
   margin-bottom: 50px;
 }
 
+@media screen and (max-width: 850px) {
+  .about {
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+}
+@media screen and (max-width: 640px) {
+  .about {
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+}
 /* About view slut */
 /* Contact view start */
 .section-kontakt {
@@ -1219,19 +1337,19 @@ section-vikar .vikar-box .box-1, section-vikar .vikar-box .box-2 {
   }
 }
 
-.about {
+.about1 {
   margin-top: 50px;
   margin-left: 170px;
   margin-right: 170px;
   margin-bottom: 50px;
 }
-.about .buttons {
+.about1 .buttons {
   display: flex;
   justify-content: space-evenly;
   margin-top: 50px;
 }
 @media screen and (max-width: 770px) {
-  .about .about {
+  .about1 .about1 {
     margin: 50px 50px;
   }
 }
@@ -1243,13 +1361,31 @@ section-vikar .vikar-box .box-1, section-vikar .vikar-box .box-2 {
   height: 500px;
   background-color: rgba(62, 62, 62, 0.7);
 }
+.banner-container-vikar .banner-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: -1;
+}
+.banner-container-vikar .content-box {
+  padding-left: 100px;
+  padding-top: 200px;
+}
+.banner-container-vikar .content-box .style {
+  text-align: start;
+  padding-bottom: 20px;
+}
 @media (max-width: 800px) {
   .banner-container-vikar .banner-container-vikar {
     height: 500px;
   }
 }
 
-/* Vikar view start */
+/* Vikar view slut */
 /* Footer component start */
 footer {
   bottom: 0;
@@ -1259,13 +1395,12 @@ footer {
   background-color: #303030;
 }
 footer .footer-container {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
   padding: 30px;
-  flex-direction: row;
 }
 footer .footer-container .footer-item {
-  margin-bottom: 10px;
   padding: 10px;
   color: #FFFFFF;
   display: flex;
@@ -1280,17 +1415,18 @@ footer .footer-container .footer-item .footer-link {
 footer .footer-container .footer-item img {
   width: 200px;
 }
-footer .social-icon i {
+footer .footer-container .social-icon i {
   margin: 8px;
   color: #FFFFFF;
 }
 @media (max-width: 768px) {
   footer .footer-container {
-    flex-direction: column;
-  }
-  footer .footer-item {
-    width: 100%;
+    grid-template-columns: 1fr;
   }
 }
 
-/* Footer component slut *//*# sourceMappingURL=style.css.map */
+/* Footer component slut */
+/* Benefit component start */
+/* Benefit component slut */
+/* Vikarservice component start */
+/* Vikarservice component slut *//*# sourceMappingURL=style.css.map */

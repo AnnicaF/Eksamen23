@@ -4,6 +4,7 @@ h1 {
   text-align: center;
   color: #FFFFFF;
   padding-top: 200px;
+  font-family: "roboto", sans-serif;
 }
 @media (max-width: 800px) {
   h1 {
@@ -18,6 +19,7 @@ h2.gul {
   color: #F3AE3D;
   margin-bottom: 30px;
   padding-top: 50px;
+  font-family: "roboto", sans-serif;
 }
 
 h2 {
@@ -33,13 +35,26 @@ h2.hvid {
   font-weight: bold;
   color: #FFFFFF;
   text-align: center;
+  font-family: "roboto", sans-serif;
+}
+@media (max-width: 600px) {
+  h2.hvid {
+    font-size: 25px;
+  }
 }
 
 h3 {
   font-size: 24px;
   font-weight: bold;
-  color: #FFFFFF;
+  color: #000000;
   padding-bottom: 20px;
+}
+
+h3.red {
+  font-size: 24px;
+  font-weight: bold;
+  color: #8E4949;
+  text-align: center;
 }
 
 h3.sort {
@@ -60,6 +75,13 @@ h5 {
   margin-top: 20px;
 }
 
+h5.footer {
+  font-size: 17px;
+  margin-top: 20px;
+  padding-bottom: 20px;
+  text-align: start;
+}
+
 h5.italic {
   font-style: italic;
 }
@@ -68,6 +90,7 @@ p {
   font-size: 16px;
   line-height: 1.8;
   color: #000000;
+  padding-top: 10px;
 }
 
 p.small {
@@ -81,6 +104,7 @@ p.hvid {
   font-size: 16px;
   line-height: 1.8;
   color: #FFFFFF;
+  padding-top: 10px;
 }
 
 p.italic {

@@ -25,7 +25,7 @@
     border: 2px solid $text-color-gul; 
     margin-top: 20px;
   }
-
+  // ekstra sekundær knap 
   .btn-secondary2 {
     @extend .btn;
     background-color: $button-color-trans;
@@ -34,4 +34,10 @@
     margin-top: 20px;
   }
 
-  // ekstra sekundær knap 
+  // lille knap
+  .btn-small {  
+    padding: 10px 40px;
+    background-color: $button-color-gul;
+    color: $text-color-hvid;
+    border:2px;
+  }

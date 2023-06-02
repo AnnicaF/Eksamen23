@@ -1,11 +1,13 @@
 @import 'design/colors';
 @import 'design/typografi';
 @import 'design/button';
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
 }
 
 
@@ -224,6 +226,13 @@
     padding-top:100px;
     color: $text-color-hvid;
   }
+
+  @media screen and (max-width: 600px) {
+    .content {
+      padding-left:50px;
+    padding-top:70px;
+    }
+}
 }
 /* Contact section  component slut */
 
@@ -284,7 +293,13 @@
   justify-content: center;
   align-items: center;
   gap: 10px;
-  padding: 20px;
+  padding: 30px;
+
+  select{
+    height: 40px;
+    width: 130px;
+    padding: 10px;
+  }
 
     .filter-bar select,
   .filter-bar button {
@@ -299,6 +314,7 @@
   align-items: center;
   gap: 20px;
   padding: 20px;
+  margin-bottom: 100px;
 
   .box {
     border: 1px solid #000;
@@ -307,14 +323,13 @@
 
     .box-title {
       font-size: 18px;
-      margin-bottom: 20px;
+      text-align: start;
     }
     .box-text {
       margin-bottom: 35px;
     }
     .box-buttons {
       display: flex;
-      justify-content: center;
       gap: 10px;
 
       .button1 {
@@ -365,9 +380,8 @@
     transform: translateX(calc(-250px * 7));
   }
 }
-
 .slider {
-  height: 100px;
+  height: 70px;
   margin-top: 50px;
   margin-bottom: 50px;
   overflow: hidden;
@@ -391,7 +405,7 @@
       img {
         filter: grayscale(100%);
         transition: filter 0.3s ease;
-        height: 100px;
+        height: 70px;
         width: 100%;
         object-fit: contain
         }
@@ -602,6 +616,56 @@ li::marker{
 section {
   background: $background-sand;
   height: 750px;
+  padding-top:50px;
+
+  .boxes {
+    display: grid;
+    grid-template-areas: 'a b c';
+    gap: 50px;
+    justify-items: center;
+    justify-content: center;
+
+    .box1, .box2, .box3 {
+      background-color: #fff;
+      padding: 15px;
+      width: 280px;
+      height: 500px;
+      box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+      border-radius: 10px;
+      border: 3px solid #F3AE3D;
+
+      p.small1{
+        padding-top: 20px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1038px) {
+  section .boxes {
+    grid-template-areas: 'a b' 'c c';
+    align-items: center;
+  }
+  section {
+    height: 1300px;
+  }
+}
+@media screen and (max-width: 600px) {
+  section .boxes {
+    grid-template-areas: 'a' 'b' 'c';
+  }
+  section .box1, section .box2, section .box3 {
+    width: 160px;
+    height: 200px;
+  }
+  section {
+    height: 920px;
+  }
+}
+
+.box1 { grid-area: a; }
+.box2 { grid-area: b; }
+.box3 { grid-area: c; }
 
   .boxes {
     display: grid;
@@ -649,10 +713,9 @@ section {
       height: 200px;
     }
     section {
-      height: 920px;
+      height: 1800px;
     }
     }
-}
 .box1 { grid-area: a;}
 .box2 { grid-area: b;}
 .box3 { grid-area: c;}
@@ -662,13 +725,14 @@ section {
 
 /* Section-Two component start*/
 
-section-two{
+.section-2{
   position: relative;
   width: 100%;
+  padding-top: 40px;
   height: 600px;
   background-color: rgba(62, 62, 62, 0.7);
 
-  .background-img{
+  .background-image{
     top: 0;
     left: 0;
     width: 100%;
@@ -695,15 +759,21 @@ section-two{
       background-color: #8E4949;
       color: white;
       padding: 20px;
-      width: 200px;
+      width: 250px;
       height: 400px;
+      border:none;
       box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
       border-radius: 10px;
+      .icon {
+        height: 80px;
+        display: block;
+        margin: 0 auto;
+      }
     }
     .box1, .box3 {
       background-color: #fff;
       padding: 20px;
-      width: 200px;
+      width: 250px;
       height: 360px;
       box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
       border-radius: 10px;
@@ -730,7 +800,7 @@ section-two{
       height: 1020px;
       padding-bottom: 20px;
     }
-    section-two{
+    .section-2{
       height: 1000px;
     }
     }
@@ -748,7 +818,7 @@ section-two{
       width: 180px;
       height: 220px;
     }
-    section-two {
+    .section-2 {
       height: 920px;
     }
     }
@@ -951,69 +1021,72 @@ section-two{
 /* Team component  slut*/
 
 /* VikarSection component  start*/
-
-section-vikar {
+.image-section-3 {
   position: relative;
   width: 100%;
-  height: 600px;
-  background-color: rgba(62, 62, 62, 0.7);
+  height: 400px;
+}
 
-  .vikar-box {
-    display: grid;
-    grid-template-areas: 'a b';
-    gap: 50px;
-    justify-items: center;
-    justify-content: center;
-    align-items:center;
-    position: absolute;
-    top: 10%;
-    bottom: 0;
-    left: 0;
-    right: 0;
+.image-section-3 .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
 
-    .box-1, .box-2 {
-      padding: 20px;
-      width: 200px;
-      height: 360px;
-      color: #fff;
-      text-align: center;
-    }
+.image-section-3 .responsive-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.image-section-3 .content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding-left: 100px;
+  padding-top: 100px;
+  color: $text-color-hvid;
+  z-index: 1;
+}
+
+.image-section-3 .vikar-box {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 50px;
+  justify-items: center;
+  align-items: center;
+}
+
+.image-section-3 .box-1,
+.image-section-3 .box-2 {
+  padding: 20px;
+  width: 200px;
+  height: 360px;
+  color: #fff;
+  text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+  .image-section-3 .content {
+    padding-left: 50px;
+    padding-top: 70px;
   }
 
-  @media screen and (max-width: 800px) {
-    .vikar-box {
-      grid-template-areas: 
-      'a b';
-      align-items: center;
-    }
-    .background-img{
-      height: 1020px;
-      padding-bottom: 20px;
-    }
-    section-vikar {
-      height: 1000px;
-    }
-    }
-    @media screen and (max-width: 600px) {
-    .vikar-box {
-      grid-template-areas: 
-      'a'
-      'b';
-    }
-    .overlay{
-      height: 870px;
-    }
-    .box-1, .box-2s {
-      width: 180px;
-      height: 220px;
-    }
-    section-vikar {
-      height: 920px;
-    }
-    }
+  .image-section-3 .vikar-box {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .image-section-3 .box-1,
+  .image-section-3 .box-2 {
+    width: 100%;
+    height: auto;
+  }
 }
-.box-1 { grid-area: a;}
-.box-2 { grid-area: b;}
+
 /* VikarSection component  slut*/
 
 /* About view start */
@@ -1022,6 +1095,19 @@ section-vikar {
   margin-left:170px;
   margin-right:170px;
   margin-bottom:50px;
+}
+
+@media screen and (max-width: 850px) {
+  .about {
+    margin-left:100px;
+    margin-right:100px;
+  }
+}
+@media screen and (max-width: 640px) {
+  .about {
+    margin-left:40px;
+    margin-right:40px;
+  }
 }
 
 /* About view slut */
@@ -1038,7 +1124,7 @@ section-vikar {
 
   }
   span{
-    color: #8E4949;
+    color: $text-color-red;
   }
 }
 
@@ -1049,7 +1135,7 @@ section-vikar {
 .banner-container2{
   position: relative;
   height: 800px;
-  background-color: rgba(62, 62, 62, 0.7);
+  background-color: $overlay-color;
 
   .banner-image {
     position: absolute;
@@ -1128,7 +1214,7 @@ section-vikar {
   }
 }
 
-.about{
+.about1{
   margin-top:50px;
   margin-left:170px;
   margin-right:170px;
@@ -1140,7 +1226,7 @@ section-vikar {
     margin-top: 50px;
   }
   @media screen and (max-width: 770px) {
-    .about {
+    .about1 {
       margin: 50px 50px;
     }
   }
@@ -1152,7 +1238,26 @@ section-vikar {
 .banner-container-vikar {
   position: relative;
   height: 500px;
-  background-color: rgba(62, 62, 62, 0.7);
+  background-color:  $overlay-color;
+
+  .banner-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+  }
+  .content-box{
+    padding-left: 100px;
+    padding-top: 200px;
+
+    .style{
+      text-align: start;
+      padding-bottom: 20px;
+    }
+  }
 
   @media (max-width: 800px) {
     .banner-container-vikar {
@@ -1160,7 +1265,7 @@ section-vikar {
     }
   }
 }  
-/* Vikar view start */
+/* Vikar view slut */
 
 
 /* Footer component start */
@@ -1172,13 +1277,12 @@ footer {
   background-color: $background-grey;
 
   .footer-container {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
     padding: 30px;
-    flex-direction: row;
 
     .footer-item {
-      margin-bottom: 10px;
       padding: 10px;
       color: #FFFFFF;
       display: flex;
@@ -1189,26 +1293,40 @@ footer {
         margin-bottom: 10px;
         text-decoration: none;
         font-size: 13px;
-        }
-
-      img{
-        width:200px;
       }
+
+      img {
+        width: 200px;
       }
     }
-    .social-icon i{
+
+    .social-icon i {
       margin: 8px;
       color: #FFFFFF;
+    }
   }
+
   @media (max-width: 768px) {
     .footer-container {
-        flex-direction: column;
-    }
-    .footer-item {
-        width: 100%;
+      grid-template-columns: 1fr;
     }
   }
 }
+
 /* Footer component slut */
+
+/* Benefit component start */
+
+
+
+/* Benefit component slut */
+
+
+/* Vikarservice component start */
+
+
+/* Vikarservice component slut */
+
+
 
 

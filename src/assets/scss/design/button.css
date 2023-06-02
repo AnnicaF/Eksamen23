@@ -22,4 +22,11 @@
   color: #FFFFFF;
   border: 2px solid #FFFFFF;
   margin-top: 20px;
+}
+
+.btn-small {
+  padding: 10px 40px;
+  background-color: #F3AE3D;
+  color: #FFFFFF;
+  border: 2px;
 }/*# sourceMappingURL=button.css.map */
