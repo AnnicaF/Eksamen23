@@ -1,8 +1,8 @@
 <script setup>
 import Nav from '../components/Nav.vue'
+import Footer from '../components/Footer.vue'
 import Banner from '../components/Banner.vue'
 import Section from '../components/Section.vue'
-import TextSection from '../components/TextSection.vue'
 import ContactSection from '../components/ContactSection.vue'
 </script>
 
