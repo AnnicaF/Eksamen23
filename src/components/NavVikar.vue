@@ -2,7 +2,7 @@
     <header :class="{'scrolled-nav': scrolledNav }">
         <nav>
             <div class="branding">
-                <img src="src/assets/img/logo/logo.png" alt="">
+                <img src="../assets/img/logo/logo.png" alt="">
             </div>
             <ul v-show="!mobile" class="navigation">
                 <li><router-link class="link" :to="{ name:'' }">Jobsøgende</router-link></li>
@@ -75,7 +75,7 @@ export default {
                 return;
             }
             this.mobile = false;
-            this.mobilNav = false;
+            this.mobileNav = false;
             return;
             }
         }

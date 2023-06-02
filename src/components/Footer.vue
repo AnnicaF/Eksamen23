@@ -2,8 +2,8 @@
     <footer>
       <div class="footer-container">
         <div class="footer-item">
-            <img src="src/assets/img/logo/logo.png" alt="Logo af DKV">
-            <h5>OM DK VIKARSERVICE</h5>
+            <img src="../assets/img/logo/logo.png" alt="Logo af DKV">
+            <h5 class="footer">OM DK VIKARSERVICE</h5>
             <p class="hvid info">DK Vikarservice er et dansk 
                 vikar- og rekrutteringsbureau, der 
                 tilbyder flere forskellige løsninger. 
@@ -11,20 +11,20 @@
             </p>
         </div>
         <div class="footer-item">
-            <h5>SØGER DU JOB?</h5>
+            <h5 class="footer">SØGER DU JOB?</h5>
             <router-link to="/job"   class="footer-link">Ledige job</router-link>
             <router-link to="/about" class="footer-link">Registrer dig</router-link>
             <router-link to="/about" class="footer-link">Log ind</router-link>
             <router-link to="/about" class="footer-link">Blog</router-link>
         </div>
         <div class="footer-item">
-            <h5>SØGER DU NYE MEDARBEJDERE?</h5>
-            <router-link to="/job"   class="footer-link">Virksomheder</router-link>
+            <h5 class="footer">SØGER DU NYE MEDARBEJDERE?</h5>
+            <router-link to="/"   class="footer-link">Virksomheder</router-link>
             <router-link to="/about" class="footer-link">Vikarserviceses</router-link>
             <router-link to="/about" class="footer-link">Log ind</router-link>
         </div>
         <div class="footer-item">
-            <h5>KONTAKT OS</h5>
+            <h5 class="footer">KONTAKT OS</h5>
             <p class="hvid">TLF: 70 60 59 60 <br>
                 @: info@dkvikarservice.dk <br>
                 Kochsgade 31C <br> 5000 Odense C <br> CVR: 41939524

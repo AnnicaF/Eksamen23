@@ -3,7 +3,7 @@
         <h2 class="heading">Teamet bag DKV</h2>
             <div class="box-kontrol">
                 <div class="outer-box-1">
-                    <img clasa="top-img" src="src/assets/img/vikar/vikar-01.png" alt="">
+                    <img clasa="top-img" src="../assets/img/vikar/vikar-01.png" alt="">
                     <div class="inner-box">
                         <div class="tekst-top">
                             <h5>CEO</h5>
@@ -18,7 +18,7 @@
                 </div>
 
                 <div class="outer-box-2">
-                    <img clasa="top-img" src="src/assets/img/vikar/vikar-02.png" alt="">
+                    <img clasa="top-img" src="../assets/img/vikar/vikar-02.png" alt="">
                     <div class="inner-box">
                         <div class="tekst-top">
                             <h5>Salgschef</h5>
@@ -33,7 +33,7 @@
                 </div>
 
                 <div class="outer-box-3">
-                    <img clasa="top-img" src="src/assets/img/vikar/vikar-03.png" alt="">
+                    <img clasa="top-img" src="../assets/img/vikar/vikar-03.png" alt="">
                     <div class="inner-box">
                         <div class="tekst-top">
                             <h5>Projektleder</h5>
@@ -48,7 +48,7 @@
                 </div>
 
                 <div class="outer-box-4">
-                    <img clasa="top-img" src="src/assets/img/vikar/vikar-03.png" alt="">
+                    <img clasa="top-img" src="../assets/img/vikar/vikar-03.png" alt="">
                     <div class="inner-box">
                         <div class="tekst-top">
                             <h5>Erhverskonsulent</h5>
@@ -63,7 +63,7 @@
                 </div>
 
                 <div class="outer-box-5">
-                    <img clasa="top-img" src="src/assets/img/vikar/vikar-04.png" alt="">
+                    <img clasa="top-img" src="../assets/img/vikar/vikar-04.png" alt="">
                     <div class="inner-box">
                         <div class="tekst-top">
                             <h5>Erhverskonsulent</h5>
@@ -77,7 +77,7 @@
                     </div>
                 </div>
                 <div class="outer-box-6">
-                    <img clasa="top-img" src="src/assets/img/vikar/vikar-05.png" alt="">
+                    <img clasa="top-img" src="../assets/img/vikar/vikar-05.png" alt="">
                     <div class="inner-box">
                         <div class="tekst-top">
                             <h5>Systemsansvarlig</h5>
@@ -92,7 +92,7 @@
                 </div>
 
                 <div class="outer-box-7">
-                    <img clasa="top-img" src="src/assets/img/vikar/vikar-06.png" alt="">
+                    <img clasa="top-img" src="../assets/img/vikar/vikar-06.png" alt="">
                     <div class="inner-box">
                         <div class="tekst-top">
                             <h5>Marketingskooridantor</h5>
@@ -107,7 +107,7 @@
                 </div>
 
                 <div class="outer-box-8">
-                    <img clasa="top-img" src="src/assets/img/vikar/vikar-07.png" alt="">
+                    <img clasa="top-img" src="../assets/img/vikar/vikar-07.png" alt="">
                     <div class="inner-box">
                         <div class="tekst-top">
                             <h5> Rekrutteringskonsulent</h5>
@@ -122,7 +122,7 @@
                 </div>
 
                 <div class="outer-box-9">
-                    <img clasa="top-img" src="src/assets/img/vikar/vikar-08.png" alt="">
+                    <img clasa="top-img" src="../assets/img/vikar/vikar-08.png" alt="">
                     <div class="inner-box">
                         <div class="tekst-top">
                             <h5>Rekrutteringskonsulent</h5>
@@ -137,7 +137,7 @@
                 </div>
 
                 <div class="outer-box-10">
-                    <img clasa="top-img" src="src/assets/img/vikar/vikar-09.png" alt="">
+                    <img clasa="top-img" src="../assets/img/vikar/vikar-09.png" alt="">
                     <div class="inner-box">
                         <div class="tekst-top">
                             <h5>Rekrutteringskonsulent</h5>
@@ -152,7 +152,7 @@
                 </div>
 
                 <div class="outer-box-11">
-                    <img clasa="top-img" src="src/assets/img/vikar/vikar-010.png" alt="">
+                    <img clasa="top-img" src="../assets/img/vikar/vikar-010.png" alt="">
                     <div class="inner-box">
                         <div class="tekst-top">
                             <h5>Rekrutteringskonsulent</h5>

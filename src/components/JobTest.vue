@@ -20,7 +20,7 @@
           <option value="thisMonth">Denne måned</option>
           <option value="all">Alle</option>
         </select>
-        <button @click="resetFilters">Nulstil</button>
+        <button class="btn-small" @click="resetFilters">Nulstil</button>
       </div>
   
       <div class="box-container">
