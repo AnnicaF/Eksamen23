@@ -3,10 +3,12 @@ import NavVikar from '../components/NavVikar.vue'
 import Section from '../components/Section.vue'
 import ContactSection from '../components/ContactSection.vue'
 import IconBanner from '../components/IconBanner.vue'
+import Cities from '../components/Cities.vue'
 import VikarSection from '../components/VikarSection.vue'
-import Slider from '../components/Slider.vue'
 import SectionTwo from '../components/SectionTwo.vue'
 import JobSlider from '../components/JobSlider.vue'
+import Benefit from '../components/Benefit.vue'
+import Youtube         from '../components/Youtube.vue'
 </script>
 <template>
   <NavVikar/>
@@ -18,9 +20,17 @@ import JobSlider from '../components/JobSlider.vue'
         <button class="btn">Register dig som vikar</button>
       </div>
     </div>
-  <Section/>
-  <VikarSection/>
+    <Benefit
+      heading="Tre fordele ved at være vikar"
+      :items="[
+        {text: 'Faglige kompetencer: En fordel ved at være vikar er muligheden for at udvide dine faglige kompetencer og lære nye færdigheder. Når du arbejder i forskellige virksomheder og projekter, udsættes du for forskellige arbejdsmetoder, teknologier og opgaver.' },
+        { text: ' Erfaring og udvikling: Vikararbejde giver dig mulighed for at opbygge en bred vifte af erfaringer og færdigheder. Du kan arbejde i forskellige virksomheder, brancher og arbejdsmiljøer, hvilket giver dig indsigt og viden, der kan styrke din professionelle profil. Du kan udvikle dine evner og lære nye ting undervejs.' },
+        { text: 'Netværk og karrieremuligheder: Som vikar har du mulighed for at opbygge et omfattende professionelt netværk. Du kan møde mennesker indenfor din branche, skabe kontakter og få anbefalinger. Dette kan åbne døre til fremtidige jobmuligheder, potentielle faste stillinger eller muligheden for at arbejde på spændende projekter og opgaver i fremtiden.' }
+      ]"
+    />
+  <Youtube/>
   <IconBanner/>
-  <Slider/>
+  <SectionTwo/>
+  <Cities/>
   <ContactSection imageSrc="src/assets/img/img-05.jpg" altText="Banner billede"/>
 </template>

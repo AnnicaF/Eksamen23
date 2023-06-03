@@ -24,7 +24,7 @@ import Benefit         from '../components/Benefit.vue'
         { text: 'Professionel support og udvikling: Som vikar hos DKV får du adgang til professionel support, rådgivning og opfølgning. Vores team af rekrutteringseksperter er dedikerede til at hjælpe dig med at trives og udvikle dine færdigheder, hvilket kan bidrage til at styrke din karriere og åbne døre for nye muligheder.' }
       ]"
     />
-
+    <Youtube/>
     <IconBanner/>
     <ContactSection imageSrc="src/assets/img/img-05.jpg" altText="Banner billede"/>
     <Footer/>
