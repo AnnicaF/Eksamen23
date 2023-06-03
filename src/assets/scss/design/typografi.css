@@ -17,8 +17,6 @@ h2.gul {
   font-weight: bold;
   text-align: center;
   color: #F3AE3D;
-  margin-bottom: 30px;
-  padding-top: 50px;
   font-family: "roboto", sans-serif;
 }
 
@@ -46,15 +44,17 @@ h2.hvid {
 h3 {
   font-size: 24px;
   font-weight: bold;
-  color: #000000;
+  color: #FFFFFF;
   padding-bottom: 20px;
+  line-height: 2;
 }
 
 h3.red {
-  font-size: 24px;
+  font-size: 40px;
   font-weight: bold;
   color: #8E4949;
   text-align: center;
+  padding-top: 10px;
 }
 
 h3.sort {
@@ -67,7 +67,8 @@ h3.sort {
 h4 {
   font-size: 20px;
   font-weight: bold;
-  text-align: center;
+  color: #FFFFFF;
+  line-height: 1.8;
 }
 
 h5 {
