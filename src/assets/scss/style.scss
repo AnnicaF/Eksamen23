@@ -108,7 +108,7 @@
 
 /* Contact form component start */
 
-.image-section {
+.image-section-form {
   position: relative;
   width: 100%;
   height: 550px;
@@ -235,56 +235,6 @@
 }
 }
 /* Contact section  component slut */
-
-/* Icon banner component start */
-
-.logo-container{
-    width: 100%;
-    height: 150px;
-    background-color: $background-red;
-    display: grid;
-    grid-template-areas: 'a b c d';
-    align-items: center;
-    gap:60px;
-    justify-content: center;
-
-    img{
-        height: 150px;  
-    }
-    @media screen and (max-width: 920px) {
-        .logo-container {
-         gap: 30px;
-        }
-        img{
-          height: 130px;
-        }
-      }
-      @media screen and (max-width: 740px) {
-        .logo-container {
-         gap: 30px;
-        }
-        img{
-          height: 100px;
-        }
-      }
-      @media screen and (max-width: 600px) {
-        .logo-container{
-          height: 140px;
-          gap: 5px;
-          justify-content: space-evenly;
-        }
-        img{
-          height: 60px;
-        }
-      }
-}
-
-.logo1{ grid-area: a;}
-.logo2{ grid-area: b;}
-.logo3{ grid-area: c;}
-.logo4{ grid-area: d;}
-
-/* Icon banner component slut */
 
 /* JobTest component start */
 .filter-bar {
@@ -495,16 +445,59 @@ header{
         &:hover{
           border-color: #F3AE3D;
         }
+        &.active {
+          border-bottom: 1px solid #F3AE3D;
+        }
         }
         li{
           padding: 16px;
           margin-left: 16px;
+          position: relative;
+          list-style: none;
+        
+            .dropdown-menu {
+              display: none;
+              position: absolute;
+              top: 100%;
+              left: 0;
+              width: 100%;
+              background-color: $background-grey;
+              padding: 10px;
+              z-index: 10;
+        
+              ul {
+                list-style: none;
+                padding: 0;
+                margin: 0;
+        
+                li {
+                  margin-bottom: 10px;
+        
+                  a {
+                    text-decoration: none;
+                    color: $text-color-hvid;
+                    font-weight: bold;
+        
+                    &:hover {
+                      text-decoration: underline $text-color-gul;
+        
+                    }
+                  }
+                }
+              }
+            }
+        
+            &:hover {
+              .dropdown-menu {
+                display: block;
+              }
+            }
+          }
 
           a {
             list-style: none;
             }
       }
-
       .login-link {
         display: inline-block;
         padding: 8px 16px;
@@ -547,9 +540,10 @@ header{
       position: fixed;
       align-items: center;
       width: 100%;
-      height: 60%;
+      height: 560px;
+      padding-top: 60px;
       background-color: $background-grey;
-      top: 80px;
+      top: 0;
       left: 0;
 
       .link{
@@ -596,13 +590,12 @@ header{
 
     }
 
-  }
 header.scrolled-nav{
   background-color:$background-grey;
 }
-@media (min-width:1140px) {
+@media (min-width:1176px) {
   nav{
-      max-width: 1140px;
+      max-width: 11760px;
   }
 }
 
@@ -763,6 +756,9 @@ section {
     bottom: 0;
     left: 0;
     right: 0;
+    .center{
+      text-align: center;
+    }
 
     .box2{
       background-color: $background-red;
@@ -795,7 +791,11 @@ section {
       }
     }
   }
+}
   @media screen and (max-width: 800px) {
+    .section-2{
+      height: 1070px;
+    
     .boxes {
       grid-template-areas: 
       'b b'
@@ -805,33 +805,24 @@ section {
     .box2{
       width: 250px;
     }
-    .background-img{
-      height: 1020px;
-      padding-bottom: 20px;
     }
-    .section-2{
-      height: 1000px;
-    }
-    }
+  }
     @media screen and (max-width: 600px) {
+      .section-2 {
+        height: 1450px;
+    
     .boxes {
       grid-template-areas: 
       'a'
       'b'
       'c';
     }
-    .overlay{
-      height: 870px;
-    }
     .box1, .box2, .box3 {
       width: 180px;
       height: 220px;
     }
-    .section-2 {
-      height: 920px;
     }
-    }
-}
+  }
 .box1 { grid-area: a;}
 .box2 { grid-area: b;}
 .box3 { grid-area: c;}
@@ -885,6 +876,10 @@ section {
     flex-direction: column;
     margin-right:70px;
     justify-content: center;
+
+    .slide-text{
+      font-size: 20px;
+    }
   }
   .text-below {
     margin-top: 20px;
@@ -905,7 +900,7 @@ section {
   .right {
     right: 10px;
   }
-
+}
   @media (max-width: 950px) {
     .rounded-image {
       width: 250px;
@@ -913,15 +908,20 @@ section {
     }
     .text-container{
       padding:0px;
+
     }
     .image-container{
       padding-top: 20px;
     }
   }
-  @media (max-width: 600px) {
+  @media (max-width: 800px) {
     .slider2 {
       height: auto;
-    }
+
+    .text-container{
+      margin: 10px;
+      margin-right: 0;
+    }}
     .slide2.active {
     display: flex;
     flex-direction: column;
@@ -931,7 +931,6 @@ section {
       height: 200px;
     }
   }
-}
 /* Slider component  slut*/
 
 
@@ -977,7 +976,7 @@ section {
           z-index: 99;
           height: 150px;
           position: relative;
-          top:-42.5%;
+          top:-46.5%;
         }
         .inner-box {
           width: 98%;
@@ -1131,7 +1130,9 @@ section {
 
   h2.heading{
     text-align: start;
-
+  }
+  .kontakt-style{
+    font-weight: bold;
   }
   span{
     color: $text-color-red;
@@ -1142,7 +1143,7 @@ section {
 
 /* Home view start */
 
-.banner-container2{
+.banner-container2 {
   position: relative;
   height: 800px;
   background-color: $overlay-color;
@@ -1156,7 +1157,8 @@ section {
     object-fit: cover;
     z-index: -1;
   }
-  .box-container{
+
+  .box-container {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -1176,55 +1178,49 @@ section {
       color: #fff;
       text-align: center;
     }
-    .box-2{
-      border: 3px solid  #F3AE3D;
-    }
-  }
-  @media screen and (max-width: 770px) {
-    .banner-container2 {
-      height: 850px;
-    }
-    .box-container {
-      flex-direction: row;
-      align-items: center;
-    }
-  
-    .boxe {
-      width: 200px;
-      height: 300px;
-      margin: 40px 20px;
-    }
-  }
-  @media screen and (max-width:600px){
-    .box-container {
-      flex-direction: column;
-      align-items: center;
-      margin-top:20px;
-    }
-    .banner-container2 {
-      height: 900px;
-    }
-    .boxe {
-      width: 190px;
-      height: 250px;
-      margin: 30px 0;
-    }
-  
-  }
-  
-  @media screen and (max-width: 480px) {
-    .banner-container2 {
-      height: 850px;
-    }
-    .boxe {
-      width: 170px;
-      height: 220px;
-      margin: 30px 0;
+
+    .box-2 {
+      border: 3px solid #F3AE3D;
     }
   }
 }
+  @media screen and (max-width: 967px) {
+    .banner-container2{
+      height: 900px;
+      padding-top: 70px;
+    
+    .box-container {
+      flex-direction: row;
+      align-items: center;
+  
+    .boxe {
+      width: 300px;
+      height: 400px;
+      margin: 30px 15px;
+    }}
+    }
+  }
 
-.about1{
+  @media screen and (max-width: 743px) {
+    .banner-container2{
+      height: 1200px;
+      padding-top: 70px;
+
+    .box-container {
+      align-items: center;
+      flex-direction: column;
+      margin-top: 20px;
+    }
+  }
+  }
+
+  @media screen and (max-width: 480px) {
+    .banner-container2{
+      height: 1200px;
+    }   
+  }
+
+.about{
   margin-top:50px;
   margin-left:170px;
   margin-right:170px;
@@ -1235,12 +1231,13 @@ section {
     justify-content: space-evenly;
     margin-top: 50px;
   }
+}
   @media screen and (max-width: 770px) {
-    .about1 {
+    .about {
       margin: 50px 50px;
     }
   }
-}
+
 /* Home view slut */
 
 /* Vikar view start */
@@ -1330,17 +1327,9 @@ footer {
 .image-section {
   position: relative;
   height: 100vh;
-  background-image: url('src/assets/img/teamwork.jpg');
+  background-image: url('src/assets/img/img-06.jpg');
   background-size: cover;
   background-position: center;
-}
-
-.overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
 }
 .heading1{
   position: relative;
@@ -1370,35 +1359,337 @@ footer {
   padding-left: 60px;
 }
 
-@media (max-width: 1100px) {
+@media (max-width: 1140px) {
+  .image-section{
+    height: 150vh;
+
   .content2 {
     flex-direction: column;
     padding: 20px;
-  }
+  
   .text-box{
     padding-left: 100px;
     padding-right: 100px;
   }
-
   .video-box {
     flex: none;
     padding: 20px;
+    iframe {
+      width: 800px;
+      height: 400px;
+    }
   }
+}
+}
+}
+@media (max-width: 960px) {
   .image-section{
-    height: 150vh;
+    height: 160vh;
+
+  .content2 {
+    flex-direction: column;
+    padding: 20px;
+  
+  .text-box{
+    padding-left: 30px;
+    padding-right: 30px;
   }
-
-}
-@media (max-width: 600px) {
-  .video-box iframe {
-    width: 100%;
-    height: 300px;
+  .video-box {
+    flex: none;
+    padding: 20px;
+    iframe {
+      width: 600px;
+      height: 400px;
+    }
   }
 }
+}
+}
+@media (max-width: 678px) {
+  .image-section{
+    height: 140vh;
 
-
-
+  .content2 {
+    flex-direction: column;
+    padding: 20px;
+  
+  .text-box{
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .video-box {
+    flex: none;
+    padding: 20px;
+    iframe {
+      width: 300px;
+      height: 300px;
+    }
+  }
+}
+}}
 /* Youtube component slut */
 
+/* Banner CTA start */
 
+.cta-container {
+  position: relative;
+  height: 600px;
+  background-color: $overlay-color;
+
+  .banner-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+  }
+  .cta-box-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    .cta-boxe {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 320px;
+      height: 420px;
+      margin: 80px;
+      padding: 30px;
+      border-radius:10px ;
+      border: 3px solid $text-color-gul;
+      color: #fff;
+      text-align: center;
+
+      .hvid, .space{
+        padding-bottom: 20px;
+      }
+    }
+
+      .box-02{
+        border: 3px solid  $text-color-hvid;
+      }
+    }
+  }
+    @media screen and (max-width: 800px) {
+      .cta-container{
+        height: 1000px;
+
+      .cta-box-container {
+        flex-direction: column;
+        align-items: center;
+    
+      .cta-boxe {
+        width: 300px;
+        height: 400px;
+        margin: 40px 20px;
+      }
+    }
+    }
+  }
+    @media screen and (max-width:600px){
+      .cta-box-container {
+        flex-direction: column;
+        align-items: center;
+      }
+      .cta-boxe {
+        width: 220px;
+        height: 350px;
+        margin: 30px 0;
+      }
+    
+    }
+/* Banner CTA slut */
+
+/* Joblist komponent start */
+.job-container {
+  height: 450px;
+  padding-top: 40px;
+  background-color: $background-sand;
+
+  .my-section {
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+    gap: 20px;
+    align-items: center;
+    grid-template-areas: 'a b c';
+
+    .job-box-1,
+    .job-box-2,
+    .job-box-3 {
+      border: 3px solid black;
+      border-radius: 2px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+      padding: 20px;
+      width: 350px;
+      height: 250px;
+      position: relative;
+
+      .opstart {
+        position: absolute;
+        bottom: 5px;
+        left: 10px;
+        margin: 0;
+      }
+
+      .divider {
+        position: absolute;
+        bottom: 25%;
+        left: 10px;
+        transform: translateY(50%);
+        width: calc(100% - 20px);
+        height: 3px;
+        background-color: black;
+        border: none;
+        width: 70px;
+      }
+
+      .read-more {
+        position: absolute;
+        bottom: 10px;
+        right: 10px;
+        margin: 0;
+        text-decoration: none;
+        color: #000;
+      }
+    }
+  }
+}
+  @media screen and (max-width: 1130px) {
+    .job-container {
+      height: 670px;
+
+      .my-section {
+        grid-template-areas: 'a b' 'c c';
+      }
+    }
+  }
+
+  @media screen and (max-width: 776px) {
+    .job-container {
+      height: 990px;
+
+      .my-section {
+        grid-template-areas: 'a' 'b' 'c';
+      }
+    }
+  }
+
+.job-box-1 {
+  grid-area: a;
+}
+
+.job-box-2 {
+  grid-area: b;
+}
+
+.job-box-3 {
+  grid-area: c;
+}
+
+/* Joblist komponent slut */
+.baggrund {
+  background-color: $background-sand;
+  padding: 50px;
+}
+
+.jobbeskrivelse {
+  background-color: $background-hvid;
+  padding: 60px;
+  box-shadow: 0 2px 4px rgba(86, 83, 83, 0.2);
+  margin: 40px;
+  border-radius: 5px;
+}
+
+.text-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.text-box2 {
+  padding-bottom: 40px;
+
+  ul{
+    padding-top: 30px;
+    li{
+      font-style: italic;
+      padding-bottom: 10px;
+    }
+  }
+}
+
+.text-box1 {
+  width: 100%;
+  padding-right: 90px;
+  padding-bottom: 40px;
+}
+
+.text-box3 {
+  width: 100%;
+  ul{
+    padding-top: 30px;
+    li{
+      font-style: italic;
+      padding-bottom: 10px;
+    }
+  }
+}
+
+@media screen and (max-width: 790px) {
+  .text-container {
+    flex-direction: column-reverse;
+  }
+  .text-box1{
+    padding-right: 0;
+  }
+}
+@media screen and (max-width: 650px) {
+  .button-box{
+    align-items: center;
+    flex-direction: column;
+  }
+  .baggrund{
+    padding: 0;
+  }
+  .jobbeskrivelse{
+    padding: 30px;
+  }
+}
+.button-box {
+  display: flex;
+  justify-content: center;
+  padding-top: 60px;
+  gap: 30px;
+}
+
+/* BreadCrumbs start */
+
+.breadcrumbs {
+  padding: 30px;
+
+  li {
+    display: inline-block;
+    margin-right: 5px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    a {
+      text-decoration: none;
+      color: #000;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+.bread-background{
+  background-color: $background-sand;
+}
 

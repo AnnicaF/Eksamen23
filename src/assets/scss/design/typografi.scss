@@ -23,6 +23,10 @@ h2.gul{
   text-align: center;
   color: $text-color-gul;
   font-family: 'roboto', sans-serif;
+
+  @media (max-width: 600px) {
+    font-size: 25px;
+  }
 }
 
 h2 {
@@ -31,6 +35,10 @@ h2 {
     color: $text-color-sort;
     text-align: center;
     padding-bottom: 30px;
+
+    @media (max-width: 600px) {
+      font-size: 25px;
+    }
   }
   h2.hvid {
     font-size: 36px;
@@ -50,6 +58,9 @@ h3 {
   color: $text-color-hvid;
   padding-bottom: 20px;
   line-height: 2;
+  @media (max-width: 678px) {
+    font-size: 18px;
+  }
 }
 
 h3.red {
@@ -72,6 +83,12 @@ h4{
     color:$text-color-hvid;
     line-height: 1.8;
 }
+h4.sort{
+  font-size: 20px;
+  font-weight: bold;
+  color:$text-color-sort;
+  line-height: 1.8;
+}
 h5{
     font-size: 17px;
     margin-top: 20px;
@@ -84,7 +101,9 @@ h5.footer{
 }
 h5.italic{
   font-style: italic;
+  font-weight:lighter;
 }
+
 
 // Brødtekst
 p {

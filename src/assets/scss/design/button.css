@@ -1,9 +1,15 @@
-.btn, .btn-secondary2, .btn-secondary, .btn-primary {
+.btn, .btn-secondary2, .btn-secondary, .btn-primary, .btn-stor {
   padding: 10px 40px;
   font-size: 20px;
   background-color: #F3AE3D;
   color: #FFFFFF;
   border: 2px;
+  margin-top: 15px;
+}
+
+.btn-stor {
+  width: 300px;
+  height: 50px;
 }
 
 .btn-primary {
@@ -14,7 +20,7 @@
   background-color: transparent;
   color: #F3AE3D;
   border: 2px solid #F3AE3D;
-  margin-top: 20px;
+  margin-top: 15px;
 }
 
 .btn-secondary2 {
