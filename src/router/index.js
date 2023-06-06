@@ -7,6 +7,10 @@ import JobTest      from '../views/JobTest.vue'
 import ToBeVikar    from '../views/ToBeVikar.vue'
 import VikarService from '../views/VikarService.vue'
 import Rekrutering  from '../views/Rekrutering.vue'
+import JobChildOne  from '../views/JobChildOne.vue'
+import JobChildTwo  from '../views/JobChildTwo.vue'
+import JobChildTree from '../views/JobChildTree.vue'
+import TryHire      from '../views/TryHire.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -20,6 +24,9 @@ const router = createRouter({
       path: '/about',
       name: 'About',
       component: About,
+      meta: {
+        breadcrumb: 'About'
+      }
     },
     {
       path: '/vikar',
@@ -52,10 +59,30 @@ const router = createRouter({
       component: JobTest,
     },
     {
+      path: '/jobtest/JobChildOne',
+      name: 'JobChildOne',
+      component: JobChildOne,
+    },
+    {
+      path: '/jobtest/JobChildTwo',
+      name: 'JobChildTwo',
+      component: JobChildTwo,
+    },
+    {
+      path: '/jobtest/JobChildTree',
+      name: 'JobChildTree',
+      component: JobChildTree,
+    },
+    {
       path: '/contact',
       name: 'Contact',
       component: Contact,
-    }
+    },
+    {
+      path: '/tryhire',
+      name: 'TryHire',
+      component: TryHire,
+    },  
   ]
 })
 

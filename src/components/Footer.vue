@@ -12,16 +12,16 @@
         </div>
         <div class="footer-item">
             <h5 class="footer">SØGER DU JOB?</h5>
-            <router-link to="/job"   class="footer-link">Ledige job</router-link>
-            <router-link to="/about" class="footer-link">Registrer dig</router-link>
-            <router-link to="/about" class="footer-link">Log ind</router-link>
-            <router-link to="/about" class="footer-link">Blog</router-link>
+            <router-link to="/JobTest"   class="footer-link">Ledige job</router-link>
+            <router-link to="" class="footer-link">Registrer dig</router-link>
+            <router-link to="" class="footer-link">Log ind</router-link>
+            <router-link to="" class="footer-link">Blog</router-link>
         </div>
         <div class="footer-item">
             <h5 class="footer">SØGER DU NYE MEDARBEJDERE?</h5>
-            <router-link to="/"   class="footer-link">Virksomheder</router-link>
-            <router-link to="/about" class="footer-link">Vikarserviceses</router-link>
-            <router-link to="/about" class="footer-link">Log ind</router-link>
+            <router-link to=""   class="footer-link">Virksomheder</router-link>
+            <router-link to="/VikarService" class="footer-link">Vikarservice</router-link>
+            <router-link to="" class="footer-link">Log ind</router-link>
         </div>
         <div class="footer-item">
             <h5 class="footer">KONTAKT OS</h5>

@@ -42,34 +42,54 @@
       return {
         boxes: [
           {
-            title: 'Rørlægger i randers',
+            title: 'Rørlægger i Randers',
             text: 'På vegne af vores samarbejdspartner søger vi en dygtig rørlægger nær Randers til at arbejde med renoveringsopgaver af hovedledninger og vand. Virksomheden er en jordnær entreprenørvirksomhed, der har gode og…',
             button1: 'Læs mere',
             button2: 'Ansøg her',
             type: 'Rørlægger',
             city: 'Randers',
             region: 'Midtjylland',
-            date: '2023-05-31' 
+            date: '2023-06-01' 
           },
           {
-            title: 'Rørlægger i randers',
-            text: 'På vegne af vores samarbejdspartner søger vi en dygtig rørlægger nær Randers til at arbejde med renoveringsopgaver af hovedledninger og vand. Virksomheden er en jordnær entreprenørvirksomhed, der har gode og…',
+            title: 'Maskinfører søges i Grindsted',
+            text: 'På vegne af vores samarbejdspartner søger vi en dygtig maskinfører nær Grindsted. Arbejdet består i at føre gravemaskiner i 14 til 25 tons med gps-styring. Virksomheden er en jordnær entreprenørvirksomhed, der har gode og trofaste kunder i lokalområdet..',
             button1: 'Læs mere',
             button2: 'Ansøg her',
-            type: 'VVs',
-            city: 'Odense',
+            type: 'Maskinfører',
+            city: 'Grindsted',
             region: 'Syddanmark',
-            date: '2023-04-31'
+            date: '2023-05-31'
           },
           {
-            title: 'Rørlægger i randers',
+            title: 'Murer i Stubbekøbing',
             text: 'På vegne af vores samarbejdspartner søger vi en dygtig rørlægger nær Randers til at arbejde med renoveringsopgaver af hovedledninger og vand. Virksomheden er en jordnær entreprenørvirksomhed, der har gode og…',
             button1: 'Læs mere',
             button2: 'Ansøg her',
-            type: 'Rørlægger',
+            type: 'Murer',
             city: 'Randers',
             region: 'Midtjylland',
-            date: '2023-05-29' 
+            date: '2023-06-06' 
+          },
+          {
+            title: 'Maler i Århus',
+            text: 'På vegne af vores samarbejdspartner søger vi en velkvalificeret og erfaren bygningsmaler nær Aarhus. Arbejdsområdet er et etageejendom, hvor der skal udføres meget forskelligt malerarbejde. Der er tale om alle…',
+            button1: 'Læs mere',
+            button2: 'Ansøg her',
+            type: 'Maler',
+            city: 'Århus',
+            region: 'Nordjylland',
+            date: '2023-06-19' 
+          },
+          {
+            title: 'VVS-montør i København',
+            text: 'På vegne af vores samarbejdspartner søger vi kvalitetsbevidste VVS-montører i København. Et job, hvor vand, varme og gas er omdrejningspunktet og der er stort fokus på at levere de bedste…',
+            button1: 'Læs mere',
+            button2: 'Ansøg her',
+            type: 'VVS',
+            city: 'København',
+            region: 'Hovedstaden',
+            date: '2023-06-10' 
           },
         ],
         selectedType: '',

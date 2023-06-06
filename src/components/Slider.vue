@@ -18,7 +18,7 @@
         class="text-container"
         :class="{ 'text-below': screenWidth < 500 }"
       >
-        <p>{{ item.description }}</p>
+        <p class="italic slide-text">{{ item.description }}</p>
       </div>
     </div>
     <div class="arrow left" @click="prevSlide">&#8592;</div>
@@ -34,12 +34,12 @@ export default {
         {
           image: 'src/assets/img/teamwork.jpg',
           description:
-            'Vi er ovenud tilfreds med DK Vikarservice. Tilsammen har vi over 50 års erfaring inden for malerfaget, og vi sagde begge op fra vores faste stillinger for at kunne arbejde som fast makkerpar. DK Vikarservice har givet os denne mulighed, og vi kan kun anbefale DK Vikarservice.',
+            '"Vi er ovenud tilfreds med DK Vikarservice. Tilsammen har vi over 50 års erfaring inden for malerfaget, og vi sagde begge op fra vores faste stillinger for at kunne arbejde som fast makkerpar. DK Vikarservice har givet os denne mulighed, og vi kan kun anbefale DK Vikarservice."',
         },
         {
           image: 'src/assets/img/banner.jpg',
           description:
-            'Vi er ovenud tilfreds med DK Vikarservice. Tilsammen har vi over 50 års erfaring inden for malerfaget, og vi sagde begge op fra vores faste stillinger for at kunne arbejde som fast makkerpar. DK Vikarservice har givet os denne mulighed, og vi kan kun anbefale DK Vikarservice.',
+            '"Vi er ovenud tilfreds med DK Vikarservice. Tilsammen har vi over 50 års erfaring inden for malerfaget, og vi sagde begge op fra vores faste stillinger for at kunne arbejde som fast makkerpar. DK Vikarservice har givet os denne mulighed, og vi kan kun anbefale DK Vikarservice."',
         },
         // Tilføj flere slides efter behov
       ],

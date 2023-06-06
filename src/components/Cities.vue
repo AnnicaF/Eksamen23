@@ -37,9 +37,9 @@
             </div>
 
             <div class="outer-box-05">
-                <img class="city-img" src="../assets/img/icons/grafik6.png" alt="Ikon af varetegn fra Nyborg">
+                <img class="city-img" src="../assets/img/icons/vejle.png" alt="Ikon af varetegn fra Vejle">
                 <div class="tekst-top">
-                    <h5>Nyborg</h5>
+                    <h5>Vejle</h5>
                     <p>Massere af muligheder for job og vikarer</p>
                 </div>
             </div>

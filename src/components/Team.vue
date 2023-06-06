@@ -32,21 +32,6 @@
                     </div>
                 </div>
 
-                <div class="outer-box-3">
-                    <img clasa="top-img" src="../assets/img/vikar/vikar-03.png" alt="">
-                    <div class="inner-box">
-                        <div class="tekst-top">
-                            <h5>Projektleder</h5>
-                            <p>Casper Lindgreen</p>
-                        </div>
-                            <div class="red-streg"></div>
-                            <div class="kontaktinfo">
-                            <p> +45 30 20 77 24</p>
-                            <p> cl@dkvikarservice.dk</p>
-                        </div>
-                    </div>
-                </div>
-
                 <div class="outer-box-4">
                     <img clasa="top-img" src="../assets/img/vikar/vikar-03.png" alt="">
                     <div class="inner-box">
@@ -156,7 +141,7 @@
                     <div class="inner-box">
                         <div class="tekst-top">
                             <h5>Rekrutteringskonsulent</h5>
-                            <p>Thor Præstkær Jørgensen</p>
+                            <p>Thor P. Jørgensen</p>
                         </div>
                             <div class="red-streg"></div>
                         <div class="kontaktinfo">

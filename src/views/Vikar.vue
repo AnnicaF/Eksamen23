@@ -6,20 +6,24 @@ import IconBanner from '../components/IconBanner.vue'
 import Cities from '../components/Cities.vue'
 import VikarSection from '../components/VikarSection.vue'
 import SectionTwo from '../components/SectionTwo.vue'
-import JobSlider from '../components/JobSlider.vue'
+import JobList from '../components/JobList.vue'
 import Benefit from '../components/Benefit.vue'
 import Youtube         from '../components/Youtube.vue'
+import Footer         from '../components/Footer.vue'
+import BannerCta         from '../components/BannerCta.vue'
+import Bread           from '../components/Bread.vue'
 </script>
 <template>
   <NavVikar/>
     <div class="banner-container-vikar">
-      <img class="banner-image" src="../assets/img/img-04.jpg" alt="Stemningsbillede af DK Vikarservice">
+      <img class="banner-image" src="../assets/img/box3.jpg" alt="Stemningsbillede af DK Vikarservice">
       <div class="content-box">
         <h2 class="hvid style">Leder du efter et nyt job?</h2>
         <p class="italic-hvid style">Vi sidder altid klar ved telefonerne</p>
-        <button class="btn">Register dig som vikar</button>
+        <button class="btn-stor">Register dig som vikar</button>
       </div>
     </div>
+    <Bread :items="breadcrumbItems" class="bread-background"/>
     <Benefit
       heading="Tre fordele ved at være vikar"
       :items="[
@@ -31,6 +35,25 @@ import Youtube         from '../components/Youtube.vue'
   <Youtube/>
   <IconBanner/>
   <SectionTwo/>
+  <JobList/>
+  <BannerCta/>
   <Cities/>
   <ContactSection imageSrc="src/assets/img/img-05.jpg" altText="Banner billede"/>
+  <Footer/>
 </template>
+<script>
+export default {
+    components: {
+      Bread,
+    },
+    data() {
+      return {
+        breadcrumbItems: [
+        { title: "Forside /", url: "/" },
+        { title: "Jobsøgende", url: "Vikar" },
+        ],
+      };
+    },
+  };
+  </script>
+

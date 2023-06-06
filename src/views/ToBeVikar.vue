@@ -5,11 +5,13 @@ import Banner          from '../components/Banner.vue'
 import Slider          from '../components/Slider.vue'
 import Benefit         from '../components/Benefit.vue'
 import ContactSection  from '../components/ContactSection.vue'
+import Bread           from '../components/Bread.vue'
 </script>
 
 <template>
 <NavVikar/>
-  <Banner text="Find dit nye job her" imageSrc="src/assets/img/img-02.jpg" altText="Banner billede" />
+  <Banner text="At arbejde ved DKV" imageSrc="src/assets/img/img-08.jpg" altText="Banner billede" />
+  <Bread :items="breadcrumbItems" />
   <div class="about">
     <h2 class="gul">Hvad vil det sige at være vikar?</h2>
       <p class="italic">DKV er en virksomhed, der tilbyder vikartjenester til forskellige industrier og virksomheder. Vi formidler midlertidigt ansatte arbejdskraft til virksomheder, der har behov for ekstra personale i en begrænset periode. DKV kan hjælpe med at finde vikarer til forskellige typer job, herunder administrative stillinger, produktionsarbejde, lagerarbejde, kundeservice og meget mere.</p>
@@ -25,6 +27,23 @@ import ContactSection  from '../components/ContactSection.vue'
       ]"
     />
     <Slider/>
-    <ContactSection imageSrc="src/assets/img/img-05.jpg" altText="Banner billede"/>
+    <ContactSection imageSrc="src/assets/img/img-01.jpg" altText="Banner billede"/>
     <Footer/>
 </template>
+
+<script>
+export default {
+    components: {
+      Bread,
+    },
+    data() {
+      return {
+        breadcrumbItems: [
+        { title: "Forside", url: "/" },
+        { title: "/ At arbejde med os", url: "ToBeVikar" },
+
+        ],
+      };
+    },
+  };
+  </script>
