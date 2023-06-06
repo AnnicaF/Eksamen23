@@ -11,7 +11,12 @@ import Bread           from '../components/Bread.vue'
 </script>
 <template>
     <NavVikar/>
-    <Banner text="Vikarservice" imageSrc="src/assets/img/img14.jpg" altText="Banner billede"/>
+    <div class="banner-container-vikar">
+      <img class="banner-image" src="../assets/img/img14.jpg" alt="Stemningsbillede af DK Vikarservice">
+      <div class="head-box">
+        <h1>Try & Hire</h1>
+      </div>
+    </div>
     <Bread :items="breadcrumbItems" />
     <div class="about">
     <h2 class="gul">Try & Hire</h2>
@@ -27,7 +32,7 @@ import Bread           from '../components/Bread.vue'
     />
     <BannerCta/>
     <IconBanner/>
-    <ContactSection imageSrc="src/assets/img/img14.jpg" altText="Banner billede"/>
+    <ContactSection/>
     <Footer/>
 </template>
 <script>

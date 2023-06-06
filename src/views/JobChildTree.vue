@@ -1,12 +1,16 @@
 <script setup>
 import Nav             from '../components/Nav.vue'
-import Banner          from '../components/Banner.vue'
 import Footer          from '../components/Footer.vue'
 import JobText         from '../components/JobText.vue'
 </script>
 <template>
     <Nav/>
-    <Banner text="Maskinfører i Grindsted" imageSrc="src/assets/img/img-03.jpg" altText="Banner billede"/>
+    <div class="banner-container-vikar">
+      <img class="banner-image" src="../assets/img/img-03.jpg" alt="Stemningsbillede af DK Vikarservice">
+      <div class="head-box">
+        <h1>Maskinfører</h1>
+      </div>
+    </div>
       <JobText
         :jobbeskrivelse="jobbeskrivelse"
         :rolle="rolle"

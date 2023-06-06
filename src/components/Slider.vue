@@ -11,7 +11,9 @@
         :class="{ 'image-top': screenWidth < 500 }"
       >
         <div class="rounded-image">
-          <img :src="item.image" alt="Slide Image" />
+          <img v-if="index === 0" src="../assets/img/slideimg2.jpg" alt="Slide Image" />
+          <img v-else-if="index === 1" src="../assets/img/slideimg.jpg" alt="Slide Image" />
+          <!-- Add more images here as needed -->
         </div>
       </div>
       <div
@@ -32,18 +34,16 @@ export default {
     return {
       items: [
         {
-          image: 'src/assets/img/teamwork.jpg',
           description:
             '"Vi er ovenud tilfreds med DK Vikarservice. Tilsammen har vi over 50 års erfaring inden for malerfaget, og vi sagde begge op fra vores faste stillinger for at kunne arbejde som fast makkerpar. DK Vikarservice har givet os denne mulighed, og vi kan kun anbefale DK Vikarservice."',
         },
         {
-          image: 'src/assets/img/banner.jpg',
           description:
-            '"Vi er ovenud tilfreds med DK Vikarservice. Tilsammen har vi over 50 års erfaring inden for malerfaget, og vi sagde begge op fra vores faste stillinger for at kunne arbejde som fast makkerpar. DK Vikarservice har givet os denne mulighed, og vi kan kun anbefale DK Vikarservice."',
+            '"Jeg har været vikar hos DK Vikarservice i 2 år, og jeg har kun positive ting at sige om dem. De er altid klar til at hjælpe, og de er gode til at finde vikariater, der passer til mig. Jeg kan kun anbefale DK Vikarservice til andre."',
         },
-        // Tilføj flere slides efter behov
+        // Add more items here as needed
       ],
-      activeSlide2: 0, // Ændret fra activeSlide til activeSlide2
+      activeSlide2: 0,
       screenWidth: 0,
     };
   },

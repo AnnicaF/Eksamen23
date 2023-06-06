@@ -1,7 +1,6 @@
 <script setup>
 import JobTest         from '../components/JobTest.vue'
 import Nav             from '../components/Nav.vue'
-import Banner          from '../components/Banner.vue'
 import ContactSection  from '../components/ContactSection.vue'
 import Footer          from '../components/Footer.vue'
 import JobList         from '../components/JobList.vue'
@@ -9,11 +8,16 @@ import Bread           from '../components/Bread.vue'
 </script>
 <template>
     <Nav/>
-    <Banner text="Find dit nye job her" imageSrc="src/assets/img/img-07.jpg" altText="Banner billede"/>
+    <div class="banner-container-vikar">
+      <img class="banner-image" src="../assets/img/img-07.jpg" alt="Stemningsbillede af DK Vikarservice">
+      <div class="head-box">
+        <h1>Find dit nye job her</h1>
+      </div>
+    </div>
     <Bread :items="breadcrumbItems" />
     <JobTest/>
     <JobList/>
-    <ContactSection imageSrc="src/assets/img/box2.jpg" altText="Banner billede"/>
+    <ContactSection/>
     <Footer/>
 </template>
 <script>

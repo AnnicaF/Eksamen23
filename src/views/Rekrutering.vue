@@ -1,6 +1,5 @@
 <script setup>
 import NavVikar        from '../components/NavVikar.vue'
-import Banner          from '../components/Banner.vue'
 import ContactSection  from '../components/ContactSection.vue'
 import Footer          from '../components/Footer.vue'
 import TextSection     from '../components/TextSection.vue'
@@ -11,7 +10,12 @@ import Bread           from '../components/Bread.vue'
 </script>
 <template>
     <NavVikar/>
-    <Banner text="Rekruttering" imageSrc="src/assets/img/img13.jpg" altText="Banner billede"/>
+    <div class="banner-container-vikar">
+      <img class="banner-image" src="../assets/img/img13.jpg" alt="Stemningsbillede af DK Vikarservice">
+      <div class="head-box">
+        <h1>Rekrutering</h1>
+      </div>
+    </div>
     <Bread :items="breadcrumbItems" />
     <div class="about">
     <h2 class="gul">Hvad er rekruttering?</h2>
@@ -29,7 +33,7 @@ import Bread           from '../components/Bread.vue'
     />
     <BannerCta/>
     <IconBanner/>
-    <ContactSection imageSrc="src/assets/img/img-05.jpg" altText="Banner billede"/>
+    <ContactSection/>
     <Footer/>
 </template>
 

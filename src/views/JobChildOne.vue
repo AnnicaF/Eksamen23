@@ -6,7 +6,12 @@ import JobText         from '../components/JobText.vue'
 </script>
 <template>
     <Nav/>
-    <Banner text="Rørlægger i Randers" imageSrc="src/assets/img/img-03.jpg" altText="Banner billede"/>
+    <div class="banner-container-vikar">
+      <img class="banner-image" src="../assets/img/img-03.jpg" alt="Stemningsbillede af DK Vikarservice">
+      <div class="head-box">
+        <h1>Rørlægger i Randers</h1>
+      </div>
+    </div>
       <JobText
         :jobbeskrivelse="jobbeskrivelse"
         :rolle="rolle"

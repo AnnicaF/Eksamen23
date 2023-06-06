@@ -27,14 +27,14 @@ import Bread           from '../components/Bread.vue'
       ]"
     />
     <Slider/>
-    <ContactSection imageSrc="src/assets/img/img-01.jpg" altText="Banner billede"/>
+    <ContactSection/>
     <Footer/>
 </template>
 
 <script>
 export default {
     components: {
-      Bread,
+      Bread, Banner, Slider,
     },
     data() {
       return {

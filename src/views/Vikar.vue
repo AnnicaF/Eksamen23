@@ -38,7 +38,7 @@ import Bread           from '../components/Bread.vue'
   <JobList/>
   <BannerCta/>
   <Cities/>
-  <ContactSection imageSrc="src/assets/img/img-05.jpg" altText="Banner billede"/>
+  <ContactSection/>
   <Footer/>
 </template>
 <script>

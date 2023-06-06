@@ -1,7 +1,6 @@
 <script setup>
 import Nav from '../components/Nav.vue'
 import Footer from '../components/Footer.vue'
-import Banner from '../components/Banner.vue'
 import Section from '../components/Section.vue'
 import ContactSection from '../components/ContactSection.vue'
 import Bread from '../components/Bread.vue'
@@ -9,7 +8,12 @@ import Bread from '../components/Bread.vue'
 
 <template>
   <Nav/>
-  <Banner text="Hvem er DKV?" imageSrc="src/assets/img/box1.jpg" altText="Banner billede" />
+  <div class="banner-container-vikar">
+      <img class="banner-image" src="../assets/img/box1.jpg" alt="Stemningsbillede af DK Vikarservice">
+      <div class="head-box">
+        <h1>Hvem er DKV?</h1>
+      </div>
+    </div>
   <Bread :items="breadcrumbItems" />
   <div class="about">
     <h2 class="gul">Stor passion og partnerskab</h2>
@@ -18,7 +22,7 @@ import Bread from '../components/Bread.vue'
       <p class="italic">Vi sikrer, at vores vikarer er kvalificerede og i stand til at udføre de opgaver, der kræves af dem. Vi sørger for at matche de rette vikarer med virksomhedernes specifikke behov og krav. DKV kan derfor være en nyttig ressource for virksomheder, der har brug for ekstra arbejdskraft i travle perioder eller ved midlertidige projekter. Hvis du vil i kontakt med os, så tøv ikke med at kontakte os. Du kan finde alle vores kontakter her, og dertil se hvem vi er.</p> 
     </div>
   <Section/>
-  <ContactSection imageSrc="src/assets/img/img-02.jpg" altText="Banner billede" />
+  <ContactSection/>
   <Footer/>
 </template>
 

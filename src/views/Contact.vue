@@ -10,7 +10,12 @@ import Bread       from '../components/Bread.vue'
 
 <template>
   <Nav/>
-  <Banner text="Kontakt" imageSrc="src/assets/img/img-03.jpg" altText="Banner billede"/>
+  <div class="banner-container-vikar">
+      <img class="banner-image" src="../assets/img/img-03.jpg" alt="Stemningsbillede af DK Vikarservice">
+      <div class="head-box">
+        <h1>Kontakt</h1>
+      </div>
+    </div>
   <Bread :items="breadcrumbItems" />
     <div class="section-kontakt">
         <h2 class="heading">Ring til os på: <span>+ 45 70 60 59 60</span></h2>
